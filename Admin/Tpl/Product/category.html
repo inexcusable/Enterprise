@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__PUBLIC__/images/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/javascript/jquery.min.js"></script>
+<script type="text/javascript">
+	function deldale(par)
+	{
+		var temp="__URL__/del?id="+$(par).val();
+		alert(temp);
+		window.location.href=temp;
+	}
+	function geter()
+	{
+		var temp="__URL__/geterlei?sid="+$("#one").val();
+		$("#two").load(temp);
+	}
+
+	function geter2()
+	{
+		var temp="__URL__/geterlei?sid="+$("#one1").val();
+		//alert (temp);
+		$("#two1").load(temp);
+		//del("#one1");
+	}
+	function geter3()
+	{
+		var temp="__URL__/geterlei?sid="+$("#two1").val();
+		$("#th1").load(temp);
+	}
+
+</script>
+<style type="text/css">
+body {
+	background:#FFF
+}
+input{border:1px solid;}
+td{text-align: left;}
+</style>
+</head>
+
+<body>
+<div id="contentWrap">
+	<!--表格控件 -->
+  <div id="widget table-widget">
+    <div class="pageTitle">产品分类管理</div>
+    <div class="pageColumn">
+      <div class="pageButton" style="color:red">分类管理</div>
+      <table>
+      <form action="__URL__/adddalei" method="post">
+        <tr align="left" style="text-align:left">
+        	<td align="left" style="text-align:left;width:100px;">添加大类</td>
+			<td align="left" style="text-align:left;">请输入大类名称<input type="text" name="name"/></td>
+			<td></td>
+			<td align="left" style="text-align:left;"><input type="submit" value="提交"></td>
+        </tr>
+		</form>
+		<form action="__URL__/adderlei" method="post">
+        <tr>
+        	<td align="left" style="text-align:left;">添加二类</td>
+			<td align="left" style="text-align:left;" width="300px;" >请选择大类<select size="10" name="sid">
+			<volist name="all" id="vo">
+			<option value="{$vo.id}">{$vo.name}</option>
+			</volist>
+			</select>
+			</td>
+			<td align="left" style="text-align:left;" width="200px">请输入二类名称<input type="text" name="name"/></td>
+			<td align="left" style="text-align:left;"><input type="submit" value="提交"></td>
+        </tr>
+        </form>
+        <form action="__URL__/addslei" method="post">
+        <tr>
+        	<td align="left" style="text-align:left;">添加小类</td>
+			<td align="left" style="text-align:left;"><select size="10" style="width:120px" id="one" onchange="geter()" onclick="aa()">
+			<volist name="all" id="vo">
+			<option value="{$vo.id}">{$vo.name}</option>
+			</volist>
+			</select>
+			<select size="10" name="sid" style="width:120px" id="two">
+			</select>
+			</td>
+			<td align="left" style="text-align:left;">请输入小类名称<input type="text" name="name"/></td>
+			<td align="left" style="text-align:left;"><input type="submit" value="提交"></td>
+        </tr>
+        </form>
+      </table>
+	<p>-----------------------------------------------华丽的分割线----------------------------------------------------	</p>
+		<table>
+			<tr>
+				<td width="150px">
+				<form action="__URL__/up" method="post">
+					<select style="width:120px" name="id" id="one1" onchange="geter2()">
+					<volist name="all" id="vo">
+					<option value="{$vo.id}">{$vo.name}</option>
+					</volist>
+					</select>
+					<a href="javascript:deldale('#one1');">删除</a>
+				</td>
+				<td width="200px">
+					<input type="text" name="name"/>
+				</td>
+				<td style="text-align:left">
+					<input type="submit" value="提交"/>
+				</td>
+				</form>	
+			</tr>
+
+			<tr>
+				<td>
+				<form action="__URL__/up" method="post" >
+					<select id="two1" style="width:120px" name="id" onchange="geter3()">
+					</select>
+					<a href="javascript:deldale('#two1');">删除</a>
+				</td>
+				<td>
+					<input type="text" name="name"/>
+				</td>
+				<td style="text-align:left">
+					<input type="submit" value="提交"/>
+				</td>
+				</form>
+			</tr>
+			<tr>
+				<form action="__URL__/up" method="post" >
+				<td>				
+					<select id="th1" style="width:120px" name="id">
+					</select>
+					<a href="javascript:deldale('#th1');">删除</a>
+				</td>
+				<td>
+					<input type="text" name="name"/>
+				</td>
+				<td style="text-align:left">
+					<input type="submit" value="提交"/>
+				</td>
+				</form>
+			</tr>
+		</table>
+    </div>
+  </div><!-- #widget -->
+</div>
+
+
+</body>
+</html>

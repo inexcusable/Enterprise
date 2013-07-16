@@ -1,0 +1,11 @@
+.hybig{width: 1000px; margin: 0px auto;}
+.hybiglift{float: left;width: 208px;overflow: hidden; border:1px solid;}
+.hybiglift ul{width: 208px; margin:0px; padding:0px; height:150px;}
+.hybiglift li{list-style: none; float: left; width: 80px; margin-left:10px}
+.hybiglift li a{ text-decoration:none; color: #000}
+.hybiglift li a:hover{text-decoration:none; color:#FFF; background:#000; display:block; width:80px;}
+.htybigright{float: left; height:410px; border:1px solid #000; border-top:3px solid #000; width:775px;  margin-left:10px; border-bottom:none; border-right:none}
+.htybigrightli ul li span{cursor:pointer}
+.htybigrightli ul{border-right:1px solid #000; margin:0px; padding:0px; width:774px; height:37px;}
+.htybigrightli ul li{float:left; width:100px; text-align:center; font-size:18px; background: url(themes/buy2012/images/sptab.gif) repeat-x; height:37px; line-height:37px; color:#FDD902; margin-left:1px}
+.htybigrightdiv ul li{float:left; padding:12px; width:130px; text-align:center; border-bottom:1px solid #000; border-right:1px solid #000; padding-top:0px;}

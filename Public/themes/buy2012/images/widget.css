@@ -1,0 +1,297 @@
+﻿
+
+#h22 { margin-bottom:10px; height:155px;background:url(hot.gif) repeat-x 0px -155px;}
+
+#h22left { height:155px;background:url(hot.gif) no-repeat 0px 0px;}
+
+#h22right { height:145px;padding-left:30px; padding-top:10px; background:url(hot.gif) no-repeat right -310px;}
+
+#h22 .star-off { display:none; width:0px; overflow:hidden;}
+
+#h22 .addcart .listact { width:67px; height:23px;margin-top:5px;background: url(no.gif); }
+
+#h22 .GoodsListWrap .button { margin-left:0px; width:102px; display:none; }
+
+#h22 .GoodsListWrap .button li { margin:0; }
+
+#h22 .mktprice1 { color:#333; }
+
+#h22 .price1 { font-family:arial;}
+
+#h22 li{ line-height:23px; height:23px;}
+
+
+
+/*-----商品列表----*/
+
+#shtop { height:25px; background:url(shtopp.gif) repeat-x;color:#c30; font-size:14px; padding:5px 0px 0px 10px; font-weight:bold;}
+
+.GoodsSearchWrap .boxGray { border:none; padding:0; background:#fff;  }
+
+.GoodsSearchWrap .boxGray a { line-height:18px; padding:2px 3px 1px 3px; margin-right:15px; white-space:nowrap; float:left;  }
+
+.GoodsSearchWrap .boxGray .flatshow a {padding:0px;margin-right:0px;}
+
+
+
+
+
+.GoodsSearchWrap .boxGray a:hover{ background:#4598d2; color:#fff; text-decoration:none; }
+
+.GoodsSearchWrap .boxGray a:hover span{color:#fff; }
+
+.GoodsSearchWrap .GoodsSelector .division { padding:5px 0; border:none; margin-bottom:3px; }
+
+.GoodsSearchWrap .boxBrown { background: none; border:none; border-bottom:1px solid #eee; padding:0; }
+
+.GoodsSearchWrap .boxGray .textright { border-bottom:1px solid #eee; }
+
+.GoodsSearchWrap .boxGray .boxBrown .textright { border-bottom:0px;}
+
+
+
+
+
+.GoodsSearchWrap .items-gallery .goodinfo h6 {height:32px; line-height:16px; margin-bottom:0px; margin-top:0px; overflow:hidden; }
+
+.GoodsSearchWrap .items-gallery { border:0px; padding:0px;}
+
+.GoodsSearchWrap .items-gallery .button { display:none;}
+
+.GoodsSearchWrap .items-gallery .goodpic { padding:0px;padding-bottom:3px;}
+
+.GoodsSearchWrap .items-gallery .goodpic a { border:1px solid #eee; background:none;}
+
+.GoodsSearchWrap .items-gallery .goodpic a:hover { border:1px solid #3249B0 }
+
+#qin .vdetail { display:none;}
+
+
+
+.goods-detail-tab { background: none; padding-left:0px;margin-bottom:5px;border-bottom:2px solid #333;}
+
+.goods-detail-tab div { float:left; width: auto; height:27px;line-height:30px; margin:0; margin-right:3px;font-weight:bold; font-size:14px; padding:0; overflow:hidden;background: url(tab.gif) bottom no-repeat; width:105px; color:#c30;}
+
+.goods-detail-tab .active { float:left;width:auto; height:27px; margin:0; padding:0; margin-right:3px;color:#fff; overflow:hidden;background: url(tab.gif) no-repeat; width:105px;}
+
+ul.list li { color:#333; background:none; padding:0; height:28px; line-height:28px; border:none;}
+
+ul.list { margin:0; display:none;}
+
+.row-span ul.list li { height:66px;}
+
+.goods-price .mktprice1 { color:#333;}
+
+.goods-price .price1 { color:#d00; font-size:16px; font-weight:bold; font-family:Arial; }
+
+.goods-detail-pic { border:1px solid #eaeaea;}
+
+
+
+.btn-buy{background:url(buy.gif) no-repeat;float:left;width:139px;height:39px;}
+
+.btn-fastbuy{display:none; }
+
+.GoodsInfoWrap .btnBar .btn-fav { padding-bottom:2px;}
+
+
+
+#slidewigetscontrol { position:relative;}
+
+#slidewigetscontrol #num_nav { position: absolute; top:-29px; right:6px;}
+
+#slidewigetscontrol #num_nav li { width:28px;}
+
+#slidewigetscontrol #num_nav li a { height:22px; width:22px; line-height:22px; font-size:12px; background:#999; color:#fff; font-family:Arial, Helvetica, sans-serif; }
+
+#slidewigetscontrol #num_nav li a.active { color:#fff; background:#333;}
+
+#slidewigetscontrol #num_nav li a:hover { text-decoration:none;}
+
+
+
+.GoodsBrowsed .goodsName,
+
+.GoodsBrowsed .goodsName .view-time { font-size:12px;}
+
+/*=挂件预设=======================================================================*/
+
+.MenuList{ line-height:40px;}
+
+.MenuList li{ float:left; background:url(menuli.gif) left no-repeat; }
+
+.MenuList li a{ float:left; display:block;font-family:"microsoft yahei";font-size:15px; font-weight:bold; text-align:center; color:#fff; width:88px;  }
+
+.MenuList li a.hover,
+
+.MenuList li a:hover { color:#fff; text-decoration:none; background:url(hover.gif) no-repeat;}
+
+
+
+
+
+#slidewigetscontrols{ position:absolute; bottom:0; left:0}
+
+
+
+/*=搜索======================================================================*/
+
+.SearchBar,
+
+.SearchBar table td{padding:0px; margin:0px;}
+
+.SearchBar .search_label span{display:none;}
+
+.SearchBar .keywords{width:215px;height:15px;border:0px; padding-left:8px; padding-top:8px; background:none;}
+
+.SearchBar .btn_search{	border:none;width:83px;height:33px;font-size:0;overflow:hidden;
+
+   						line-height:9999px;cursor:pointer;margin-top:0px; background:none;}
+
+.SearchBar .btn_advsearch{ display:none;}
+
+
+
+.mktprice1{	text-decoration: line-through;}
+
+.more{	margin:5px 5px 0 0;	text-align:right;}
+
+
+
+
+
+.Article-Tabs,
+
+.GoodsList-Tabs{border-color:#ccc;	margin:0;}
+
+.Article-Tabs .current,
+
+.GoodsList-Tabs .current{ background:#5d355f;color:#fff;}
+
+
+
+.itemsWrap h6{ font-weight:normal; white-space: normal;}
+
+.itemsWrap{ line-height:16px;}
+
+.sideColumn .itemsWrap h6{ white-space:normal; margin-top:0px;}
+
+/*=排行榜================================================================*/
+
+.RankingList .pic{	text-align:center;}
+
+.RankingList li{  padding:5px;}
+
+.RankingList li span{font-size:16px;	color:#7f3217;	font-weight:bold;margin-right:5px;}
+
+.OrderList .orderprice{	color:#990000;	display:block;	padding:0 0 0 15px;}
+
+.OrderList li{	padding:5px;}
+
+
+
+
+
+
+
+/*=站点地图===================================================================*/
+
+.SiteMaps td a{	padding:5px;}
+
+.SiteMaps h3 a{	background:url(arrs.gif) no-repeat 0 -82px;	padding:0 0 0 13px;}
+
+.Navigation{border:none;color:#333;font-weight:normal;line-height:36px; margin-top:3px; background:url(dangqian.png) left no-repeat; padding-left:16px;  }
+
+.Navigation span{color:#C60;   font-weight:normal;}
+
+.Navigation .now{ font-weight:normal; color:#FE5B03;}
+
+.Navigation a{color:#333;text-decoration:none;}
+
+
+
+
+
+/*=商品分类===================================================================*/
+
+.GoodsCategoryWrap{}
+
+.c-cat-depth-1 a,
+
+.s-cat-depth-1 em{ }
+
+.c-cat-depth-2 a,
+
+.s-cat-depth-2 em{}
+
+.c-cat-depth-1 a,
+
+.s-cat-depth-1 a{padding-left:8px;color:#080670;background:none;}
+
+.c-cat-depth-2 a,
+
+.s-cat-depth-2 a{}
+
+.c-cat-depth-3 a,
+
+.s-cat-depth-3 a{color:#888}
+
+
+
+.GoodsCategoryWrap { background:none;padding:0px;margin:0px;}
+
+.c-cat-depth-1{ }
+
+.c-cat-depth-1 ul{clear:both;}
+
+.c-cat-depth-1 a{font:"宋体";font-weight:bold;display:block;color:#333;padding:0px 0px 0px 28px;margin:0px;line-height:25px; height:25px;float:left; width:158px; background:#FFF5dd url(catbg2.gif) 8px 4px no-repeat; margin-bottom:5px;}
+
+.c-cat-depth-2 p{border-bottom:none;padding-left:10px;text-align:right;line-height:22px;}
+
+.c-cat-depth-2{padding-left:0px;clear:both;line-height:24px; color:#bbb;   }
+
+.c-cat-depth-2 a{font-size:12px;line-height:23px; height:23px;font-weight:normal;color:#565656; background:none; padding:0px; margin:0px;
+
+ display:inline;width:auto; white-space:nowrap;float:none;
+
+}
+
+.c-cat-depth-3{padding-left:10px;}
+
+.c-cat-depth-3 a{font-size:12px;font-weight:normal;line-height:22px; background:none;color:#777}
+
+.sideColumn .c-cat-depth-2 { width:190px; }
+
+.c-cat-depth-1 a:hover { text-decoration:none;}
+
+.c-cat-depth-2 a:hover { text-decoration:underline;}
+
+
+
+
+
+
+
+/*--全部商品---*/
+
+.quanbu { background:#fbf7ee;}
+
+.quanbu .c-cat-depth-1 { width:998px;overflow:hidden;margin-top:10px; background:url(type_jydq.jpg) no-repeat; display:block;border:#e7ca96 1px solid;}
+
+.quanbu .c-cat-depth-1 a {text-align:center; color:#fff; padding:0px; padding-top:5px;width:180px; height:30px;font-size:14px; overflow:hidden; font-weight:bold; display:block; background:none;}
+
+.quanbu .c-cat-depth-2 { border-bottom:1px dashed #e7ca96; padding-left:20px;}
+
+.quanbu .c-cat-depth-2 a { background:none; color:#005aa0; height:20px; width:80px; text-align:left; float:none;}
+
+.quanbu .c-cat-depth-3 { padding-left:0px; padding-bottom:10px;display:block;}
+
+.quanbu .c-cat-depth-3 a { background:none; color:#000; padding-right:20px; float:left;font-weight:normal; width:auto; height:auto;}
+
+
+
+.quanbu .c-cat-depth-1 ul { width:978px;overflow:hidden;}
+
+.quanbu .c-cat-depth-1 a:hover { color:#fff; background:none;}
+
+.quanbu .c-cat-depth-2 a:hover { color:#333;}

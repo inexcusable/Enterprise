@@ -1,0 +1,130 @@
+﻿.borderbz { width:165px;}
+
+.borderbz .border-top{ height:29px; background:url(bz.jpg) no-repeat;   }
+
+.borderbz .border-body{ width:163px; border-left:#959595 1px solid; border-right:#959595 1px solid;}
+
+.borderbz .border-bot { height:5px; background:url(bz3.gif) no-repeat; width:165px;}
+
+
+
+.borderbz .cat1 { padding-left:0px; margin-bottom:3px;}
+
+.borderbz .cat1 a { background:#faf4d1; border-bottom:#d6d0b1 1px solid; height:26px; line-height:26px; display:block; padding-left:25px;}
+
+
+
+.borderbz .cat2 { padding-left:25px;}
+
+.borderbz .cat2 a { background:url(bz2.gif) left no-repeat;height:24px; line-height:24px; display:block; padding-left:10px; color:#005cce;}
+
+.borderbz .cat2 a:hover {color:#005cce;}
+
+
+
+
+
+
+
+
+
+.borderpx {padding:0px;border:1px solid #ddd; }
+
+
+
+
+
+
+
+.borderaa {margin-bottom:10px; border:1px solid #ddd; position:relative; overflow:hidden;}
+
+.borderaa .border-top{ height:29px; background:#f3f3f3;   }
+
+.borderaa .border-top h3{padding:3px 0 0 6px; color:#333;margin:0; font-size:14px; font-family:"microsoft yahei";}
+
+.borderaa .border-body{ padding:5px;}
+
+
+
+.border-body .more { position:absolute; right:3px; top:4px; margin:0px;}
+
+.more a{ color:#005ea7;}
+
+
+
+.border-body .ArticleListWrap li{ height:24px; height:24px;}
+
+
+
+/*---------*/
+
+.borderbb {margin-bottom:10px;position:relative; overflow:hidden;}
+
+.borderbb .border-top{ height:30px;background:url(border1.png) no-repeat;   }
+
+.borderbb .border-top h3{padding:3px 0 0 10px; color:#fff ;margin:0;font-family:"microsoft yahei"; font-size:14px;}
+
+.borderbb .border-body{ padding:5px; border:1px solid #e6e6e6; border-top:0px; width:198px; overflow:hidden;}
+
+.borderbb .more a{ color:#fff;}
+
+.borderbb .more a:hover{ color:#fff; text-decoration:none;}
+
+
+
+
+
+.border4 { margin-bottom:10px;}
+
+.border4 .body .topp {height:30px;background:url(border1.png) no-repeat;}
+
+.border4 .borderbody { border:1px solid #e6e6e6; border-top:0px; width:198px; overflow:hidden; padding:10px 0 0 10px;}
+
+.border4 .topp h3{padding:3px 0 0 10px; color:#fff ;margin:0;font-family:"microsoft yahei"; font-size:14px;}
+
+.xx .border4 .borderbody { padding-top:3px; padding-bottom:3px;}
+
+
+
+/*--底部帮助--*/
+
+.bordercc {}
+
+.bordercc .border-top{ height:38px;  }
+
+.bordercc .border-top h3{padding:14px 0 0 0px; color:#333;margin:0;font-family:"microsoft yahei";}
+
+.bordercc .border-body{ padding:0px;}
+
+
+
+.borderdd { background:#f3f3f3; border:1px solid #eee; height:35px; padding:9px 0 9px 9px; overflow:hidden; margin-bottom:10px;}
+
+.borderdd .AdvBanner { float:left; width:99px; overflow:hidden; padding:0 5px;}
+
+/*-------------京东弹出分类边框-----------------------*/
+
+.borderb { padding:0;margin:0;margin-bottom:10px; width:207px;border-top:0px;background:#EEF0FA;border:#000 2px solid;border-top:0px;}
+
+.borderb .bodyb { padding:5px 0px; padding-bottom:0px;margin:0; _width:199px; }
+
+.header .borderb { margin-top:-2px; z-index:999999;}
+
+.borderqb {background:#DEE3FD; padding:7px 8px 7px 8px; z-index:9999px; }
+
+.c-cat-depth-1 a {padding:0;background:none; line-height:24px;color:#0B0BD6;font-size:14px;  }
+
+.c-cat-depth-2 a {padding:0;margin:0; float:left; color:#222;font-size:12px; width:93px; display:block; overflow:hidden; }
+
+
+
+
+
+
+
+
+
+
+
+
+

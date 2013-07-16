@@ -1,0 +1,148 @@
+[ 2013-07-12T10:25:05+08:00 ] 127.0.0.1 /Enterprise/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001145s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001247s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.216839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.216965s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.003657s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001307s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007660s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001286s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2013-07-12T10:25:08+08:00 ] 127.0.0.1 /Enterprise/index.php?cron=page%3Aindex&p=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001168s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001271s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.287464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.287597s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.004628s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001514s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000745s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008980s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001211s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2013-07-12T10:28:43+08:00 ] 127.0.0.1 /Enterprise/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `think_producttype` [ RunTime:0.000117s ]
+ERR: No database selected
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_producttype`
+SQL: SELECT * FROM `think_producttype`  [ RunTime:0.000109s ]
+ERR: No database selected
+ [ SQL语句 ] : SELECT * FROM `think_producttype` 
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001611s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001760s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.218111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218258s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002916s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001220s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001033s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006967s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001142s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2013-07-12T10:28:45+08:00 ] 127.0.0.1 /Enterprise/index.php?cron=page%3Aindex&p=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `think_producttype` [ RunTime:0.000120s ]
+ERR: No database selected
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_producttype`
+SQL: SELECT * FROM `think_producttype`  [ RunTime:0.000106s ]
+ERR: No database selected
+ [ SQL语句 ] : SELECT * FROM `think_producttype` 
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000490s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000568s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.271350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.271674s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002485s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000766s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000538s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005211s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000748s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2013-07-12T10:29:33+08:00 ] 127.0.0.1 /Enterprise/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `think_producttype` [ RunTime:0.000235s ]
+ERR: No database selected
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_producttype`
+SQL: SELECT * FROM `think_producttype`  [ RunTime:0.000278s ]
+ERR: No database selected
+ [ SQL语句 ] : SELECT * FROM `think_producttype` 
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000446s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.205607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.205741s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002837s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000844s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000612s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006114s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000934s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2013-07-12T10:29:34+08:00 ] 127.0.0.1 /Enterprise/index.php?cron=page%3Aindex&p=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `think_producttype` [ RunTime:0.000129s ]
+ERR: No database selected
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_producttype`
+SQL: SELECT * FROM `think_producttype`  [ RunTime:0.000116s ]
+ERR: No database selected
+ [ SQL语句 ] : SELECT * FROM `think_producttype` 
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001224s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001304s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.250009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.250249s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.008932s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001563s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000807s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014722s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001222s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2013-07-12T10:44:12+08:00 ] ERR: (ThinkException) XML标签语法错误 : name="all.sid" value=0
+[ 2013-07-12T10:44:12+08:00 ] ERR: (ThinkException) XML标签语法错误 : name="all.sid" value=0
+[ 2013-07-12T13:45:00+08:00 ] ERR: (ThinkException) XML标签语法错误 : name="all1" id=
+[ 2013-07-12T13:45:01+08:00 ] ERR: (ThinkException) XML标签语法错误 : name="all1" id=

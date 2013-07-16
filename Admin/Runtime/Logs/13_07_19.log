@@ -1,0 +1,3 @@
+[ 2013-07-19T10:19:46+08:00 ] ERR: (ThinkException) 缓存文件写入失败！:./new/con.html
+[ 2013-07-19T10:27:34+08:00 ] ERR: (ThinkException) 缓存文件写入失败！:./new/con.html
+[ 2013-07-19T10:27:44+08:00 ] ERR: (ThinkException) 缓存文件写入失败！:./new/con.html
