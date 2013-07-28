@@ -4,7 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
 <link href="__PUBLIC__/images/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="__PUBLIC__/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/jquery.js"></script>
+<script>
+function dela()
+{
+	$("#conn").attr("action","__URL__/delconn");
+	$("#conn").submit();
+}
+</script>
 <style type="text/css">
 body {
 	background: #FFF
@@ -15,42 +22,64 @@ input{border:1px solid;}
 
 <body>
 <div id="contentWrap"> 
-  <!--表格控件 -->
   <div id="widget table-widget">
     <div class="pageTitle">品牌管理</div>
     <div class="pageColumn">
       <div class="pageButton"></div>
+      <h2>这里是公司的删除和修改</h2>
+      <form action="__URL__/updataconn" method="post" id="conn">
+      	<table>
+      		<tr>
+      			<td>请选择公司</td>
+      			<td><select name="connid">
+      				<volist name="connall" id="vo" >
+					<option value="{$vo.id}">{$vo.name}</option>
+					</volist>     				
+      			</select></td>
+      			<td><input type="text" name="conname"></input></td>
+      			<td><input type="submit" value="提交"></input></td>
+      			<td><a href="javascript:dela()">删除</a></td>
+      		</tr>
+      	</table>      
+      </form>
+      <hr></hr>
+      <h2>这里是添加公司</h2>
+      <form action="__URL__/addconn" method="post">
+      	<table>
+      		<tr>
+      			<td>请输入公司名称</td>
+      			<td><input type="text" name="conname"></input></td>
+      			<td><input type="submit" value="提交"></input></td>
+      		</tr>
+      	</table>
+      </form>
+      <hr></hr>
+      
+      <h2>这里是添加品牌的哈</h2>
       <form action="__URL__/add" method="post" enctype="multipart/form-data">
       <table>
         <tr>
         <td>名称</td>
           <td>图片</td>
-          <td>所属类别</td>
+          <td>所属公司</td>
+          <td>公司所在地</td>
+          <td>类别</td>
           <td>操作</td>
-          
         </tr>
         <tr>
         <td><input type="text" name="name" /></td>
         <td><input type="file" name="image" /></td>
-        <td>
-        	<select name="producttype">
-            	<volist name="typeall" id="vo">
-					<eq name="vo.sid" value="0">
-						<option value="{$vo.id}">{$vo.name}</option>
-						<volist name="typeall" id="vo1">
-							<eq name="vo1.sid" value="$vo.id">
-								<option value="{$vo1.id}">---{$vo1.name}</option>
-								<volist name="typeall" id="vo2">
-								<eq name="vo2.sid" value="$vo1.id">
-									<option value="{$vo2.id}">-------{$vo2.name}</option>
-								</eq>
-								</volist>
-							</eq>								
-						</volist>
-					</eq>
-					</volist>
-            </select>
-        </td>
+       	<td><select name="connid">
+      				<volist name="connall" id="vo">
+					<option value="{$vo.id}">{$vo.name}</option>
+					</volist> </td>
+					<td><input type="text" name="address"></input></td>
+       <td>
+       	<select name="isimport">
+       		<option value="0"  selected="selected">国产</option>
+       		<option value="1">进口</option>
+       	</select>
+       </td>
         <td><input type="submit" value="添加" /></td>
         </tr>
       </table>

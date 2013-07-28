@@ -57,7 +57,33 @@ class NewAction extends Action {
 		if($m->where("id=%d",$id)->delete())
 		{
 			$this->success("好的成功删除");
-				}
+		}
 		
 	}
+	//这个是显示添加技术文章的哈
+	public function showshopid()
+	{
+		$m=new Model("new");
+		$this->assign("shopid",$_GET["id"]);
+		$this->display();
+	}
+	//这个就是添加一个技术文章的哈
+	public  function addshopid()
+	{
+		extract($_POST);
+		$data["title"]=$title;
+		$data["body"]=$body;
+		$data["time"]=$time;
+		$data["webtitle"]=$webtitle;
+		$data["keyword"]=$keyword;
+		$data["description"]=$description;
+		$data["newtype"]=$newtype;
+		$data["shopid"]=$shopid;
+		$m=new Model("new");
+		if($m->add($data)>0)
+		{
+			$this->success("技术文章添加成功","../Shop/index");
+		}
+	}
+	
 }

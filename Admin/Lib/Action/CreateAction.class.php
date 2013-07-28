@@ -60,6 +60,6 @@ class CreateAction extends Action {
 		$this->assign("about",$new->where("id=1")->find());
 		$this->assign("con",$new->where("id=2")->find());
 		$this->buildHtml("about","./new/","about");
-		$this->buildHtml("con","./new/","about");
+		$this->buildHtml("lianxi","./new/","conn");
 	}	
 }

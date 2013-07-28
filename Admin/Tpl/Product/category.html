@@ -9,139 +9,207 @@
 	function deldale(par)
 	{
 		var temp="__URL__/del?id="+$(par).val();
-		alert(temp);
 		window.location.href=temp;
 	}
 	function geter()
 	{
 		var temp="__URL__/geterlei?sid="+$("#one").val();
+		var temp1="__URL__/getinfo?id="+$("#one1").val();
 		$("#two").load(temp);
+		$("#erinfo").load(temp1);
 	}
-
 	function geter2()
 	{
 		var temp="__URL__/geterlei?sid="+$("#one1").val();
-		//alert (temp);
+		var temp1="__URL__/getinfo?id="+$("#one1").val();
 		$("#two1").load(temp);
-		//del("#one1");
+		$("#dainfo").load(temp1);
+		
 	}
 	function geter3()
 	{
+		//alert ("1111122222");
 		var temp="__URL__/geterlei?sid="+$("#two1").val();
 		$("#th1").load(temp);
 	}
-
+	function teeee()
+	{
+		var temp="__URL__/getinfo?id="+$("#th1").val();
+		$("xiaoinfo").load(temp);
+	}
 </script>
 <style type="text/css">
 body {
-	background:#FFF
+	background: #FFF
 }
-input{border:1px solid;}
-td{text-align: left;}
+input {
+	border: 1px solid;
+}
+textarea {
+	border: 1px solid;
+}
 </style>
 </head>
 
 <body>
 <div id="contentWrap">
-	<!--表格控件 -->
-  <div id="widget table-widget">
-    <div class="pageTitle">产品分类管理</div>
-    <div class="pageColumn">
-      <div class="pageButton" style="color:red">分类管理</div>
-      <table>
-      <form action="__URL__/adddalei" method="post">
-        <tr align="left" style="text-align:left">
-        	<td align="left" style="text-align:left;width:100px;">添加大类</td>
-			<td align="left" style="text-align:left;">请输入大类名称<input type="text" name="name"/></td>
-			<td></td>
-			<td align="left" style="text-align:left;"><input type="submit" value="提交"></td>
-        </tr>
-		</form>
-		<form action="__URL__/adderlei" method="post">
-        <tr>
-        	<td align="left" style="text-align:left;">添加二类</td>
-			<td align="left" style="text-align:left;" width="300px;" >请选择大类<select size="10" name="sid">
-			<volist name="all" id="vo">
-			<option value="{$vo.id}">{$vo.name}</option>
-			</volist>
+<!--表格控件 -->
+<div id="widget table-widget">
+  <div class="pageTitle">产品分类管理</div>
+  <div class="pageColumn">
+    <div class="pageButton" style="color:red">分类管理</div>
+    <div style="float:left; border:1px solid #000">
+      <form action="__URL__/adddalei" method="post"  enctype="multipart/form-data">
+        <div>
+          <h1>添加大类</h1>
+          <ul>
+            <li>请输入大类名称:
+              <input type="text" name="name"/>
+            </li>
+            <li>请选择大图
+              <input type="file" name="image[]">
+              </input>
+            </li>
+            <li>请选择小图
+              <input type="file" name="image[]">
+              </input>
+            </li>
+            <li>请输入描述信息
+              <textarea name="intro" style="width:200px; height:200px;"></textarea>
+            </li>
+            <li>请输入图片描述<input type="text" name="alt"></input></li>
+            <li>
+              <input type="submit" value="提交" />
+            </li>
+          </ul>
+        </div>
+      </form>
+      <form action="__URL__/adderlei" method="post"  enctype="multipart/form-data">
+        <div>
+          <h1>添加二类</h1>
+          <ul>
+            <li>请选择大类
+              <select size="10" name="sid">
+                <volist name="all" id="vo">
+                  <option value="{$vo.id}">{$vo.name}</option>
+                </volist>
+              </select>
+            </li>
+            <li>请输入二类名称:
+              <input type="text" name="name"/>
+            </li>
+            <li>请选择大图
+              <input type="file" name="image[]">
+              </input>
+            </li>
+            <li>请选择小图
+              <input type="file" name="image[]">
+              </input>
+            </li>
+            <li>请输入描述信息
+              <textarea name="intro" style="width:200px; height:200px;"></textarea>
+            </li>
+             <li>请输入图片描述<input type="text" name="alt"></input></li>
+            <li>
+              <input type="submit" value="提交" />
+            </li>
+          </ul>
+        </div>
+      </form>
+      <form action="__URL__/addslei" method="post"  enctype="multipart/form-data">
+      	 <div>
+          <h1>添加小类</h1>
+          <ul>
+            <li>请选择大类二类
+              <td align="left" style="text-align:left;"><select size="10" style="width:120px" id="one" onchange="geter()" onclick="aa()">
+                <volist name="all" id="vo">
+                  <option value="{$vo.id}">{$vo.name}</option>
+                </volist>
+              </select>
+              <select size="10" name="sid" style="width:120px" id="two">
 			</select>
-			</td>
-			<td align="left" style="text-align:left;" width="200px">请输入二类名称<input type="text" name="name"/></td>
-			<td align="left" style="text-align:left;"><input type="submit" value="提交"></td>
-        </tr>
-        </form>
-        <form action="__URL__/addslei" method="post">
-        <tr>
-        	<td align="left" style="text-align:left;">添加小类</td>
-			<td align="left" style="text-align:left;"><select size="10" style="width:120px" id="one" onchange="geter()" onclick="aa()">
-			<volist name="all" id="vo">
-			<option value="{$vo.id}">{$vo.name}</option>
-			</volist>
-			</select>
-			<select size="10" name="sid" style="width:120px" id="two">
-			</select>
-			</td>
-			<td align="left" style="text-align:left;">请输入小类名称<input type="text" name="name"/></td>
-			<td align="left" style="text-align:left;"><input type="submit" value="提交"></td>
-        </tr>
-        </form>
-      </table>
-	<p>-----------------------------------------------华丽的分割线----------------------------------------------------	</p>
-		<table>
-			<tr>
-				<td width="150px">
-				<form action="__URL__/up" method="post">
-					<select style="width:120px" name="id" id="one1" onchange="geter2()">
+            </li>
+            <li>请输入小类名称:
+              <input type="text" name="name"/>
+            </li>
+            <li>请选择大图
+              <input type="file" name="image[]">
+              </input>
+            </li>
+            <li>请选择小图
+              <input type="file" name="image[]">
+              </input>
+            </li>
+            <li>请输入描述信息
+              <textarea name="intro" id="erinfo" style="width:200px; height:200px;"></textarea>
+            </li>
+             <li>请输入图片描述<input type="text" name="alt"></input></li>
+            <li>
+              <input type="submit" value="提交" />
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    
+    <div style="float:left; margin-left:50px; border:1px solid #000">
+    	<form action="__URL__/up" method="post" enctype="multipart/form-data">
+        <div>
+        <h1>修改大类</h1>
+        	<ul>
+            	<li><select style="width:120px" name="id" id="one1" onchange="geter2()">
 					<volist name="all" id="vo">
 					<option value="{$vo.id}">{$vo.name}</option>
 					</volist>
+					</select> 请输入你要修改的名称：<input type="text" name="name" /></li>
+            <li>请选择大图 <input type="file" name="image[]"/></li>
+            <li>请选择小图 <input type="file" name="image[]"/></li>
+            <li>请输请输入描述信息入<textarea name="intro" id="dainfo" style="width:200px; height:200px;"></textarea></li>
+             <li>请输入图片描述<input type="text" name="alt"></input></li>
+            <li><a href="javascript:deldale('#one1');">删除</a></li>
+            <li><input type="submit" value="提交" /></li>
+            </ul> 
+        </div>
+    	</form>
+    	<form action="__URL__/up" method="post" enctype="multipart/form-data">
+         <div>
+        <h1>修改二类</h1>
+        	<ul>
+            	<li><select id="two1" style="width:120px" name="id" onchange="geter3()">
 					</select>
-					<a href="javascript:deldale('#one1');">删除</a>
-				</td>
-				<td width="200px">
-					<input type="text" name="name"/>
-				</td>
-				<td style="text-align:left">
-					<input type="submit" value="提交"/>
-				</td>
-				</form>	
-			</tr>
-
-			<tr>
-				<td>
-				<form action="__URL__/up" method="post" >
-					<select id="two1" style="width:120px" name="id" onchange="geter3()">
+					 请输入你要修改的名称：<input type="text" name="name"/></li>
+            <li>请选择大图 <input type="file" name="image[]"/></li>
+            <li>请选择小图 <input type="file" name="image[]"/></li>
+            <li>请输请输入描述信息入<textarea name="intro" style="width:200px; height:200px;"></textarea></li>
+             <li>请输入图片描述<input type="text" name="alt"></input></li>
+            <li><a href="javascript:deldale('#two1');">删除</a></li>
+            <li><input type="submit" value="提交" /></li>
+            </ul>
+        </div>
+        
+        
+        </form>
+        	<form action="__URL__/up" method="post" enctype="multipart/form-data">
+         <div>
+        <h1>修改小类</h1>
+        	<ul>
+            	<li><select id="th1" style="width:120px" name="id" onchange="teeee()">
 					</select>
-					<a href="javascript:deldale('#two1');">删除</a>
-				</td>
-				<td>
-					<input type="text" name="name"/>
-				</td>
-				<td style="text-align:left">
-					<input type="submit" value="提交"/>
-				</td>
-				</form>
-			</tr>
-			<tr>
-				<form action="__URL__/up" method="post" >
-				<td>				
-					<select id="th1" style="width:120px" name="id">
-					</select>
-					<a href="javascript:deldale('#th1');">删除</a>
-				</td>
-				<td>
-					<input type="text" name="name"/>
-				</td>
-				<td style="text-align:left">
-					<input type="submit" value="提交"/>
-				</td>
-				</form>
-			</tr>
-		</table>
+				 请输入你要修改的名称：<input type="text" name="name"/></li>
+            <li>请选择大图 <input type="file" name="image[]"/></li>
+            <li>请选择小图 <input type="file" name="image[]"/></li>
+            <li>请输请输入描述信息入<textarea id="xiaoinfo" name="intro" style="width:200px; height:200px;"></textarea></li>
+             <li>请输入图片描述<input type="text" name="alt"></input></li>
+            <li><a href="javascript:deldale('#th1');">删除</a></li>
+            <li><input type="submit" value="提交" /></li>
+            </ul> 
+        </div>
+        
+        
+        </form>
     </div>
-  </div><!-- #widget -->
+  </div>
+  <!-- #widget --> 
 </div>
-
-
 </body>
 </html>

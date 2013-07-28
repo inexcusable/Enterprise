@@ -11,9 +11,7 @@
 <script>
         KindEditor.ready(function(K) {
                 window.editor = K.create('#body');
-        });
-		
-		
+        });		
 	function chekc()
 	{
 		if($("#title").val().length>80){
@@ -65,9 +63,17 @@ input {
             <td style="text-align:left"><input type="text" name="title" value="{$all.title}"></td>
           </tr>
           <tr>
-            <td>请输入商品计量单位</td>
+            <td>请输入商品多少吨</td>
             <td style="text-align:left"><input type="text" name="unit" value="{$all.unit}"></td>
           </tr>
+        <tr>
+        	<td>请输入商品性能</td>
+        	<td style="text-align: left;"><input type="text" name="property" value="{$all.property}"></input></td>
+        </tr>
+        <tr>
+        	<td>请输入商品用途</td>
+        	<td style="text-align: left"><input type="text" name="use" value="{$all.use}"></input></td>
+        </tr>
           <tr>
             <td>请上传商品图片</td>
             <td style="text-align:left"><input type="file" name="image1"></td>
@@ -89,8 +95,16 @@ input {
             <td style="text-align:left"><input type="file" name="image5"></td>
           </tr>
           <tr>
+          	<td>请输入图片描述</td>
+          	<td style="text-align: left"><input type="text" name="alt" value="{$all.alt}"></td>
+          </tr>
+          <tr>
             <td>请输入商品详情</td>
-            <td><textarea id="body" name="body" style="width:900px; height:400px;">{$all.body}</textarea></td>
+            <td style="text-align:left"><textarea id="body" name="body" style="width:900px; height:400px;">{$all.body}</textarea></td>
+          </tr>
+          <tr>
+          	<td>请输入商品简介</td>
+          	<td style="text-align:left"><textarea name="intro" style="width:900px;; height:100px; border: 1px solid" >{$all.intro}</textarea></td>
           </tr>
           <tr>
             <td>请选择所属类别</td>
@@ -132,10 +146,21 @@ input {
                 </volist>
               </select></td>
           </tr>
+             <tr>
+            <td>请选择商品类型</td>
+            <td style="text-align:left"><select name="shoptype">
+                <volist name="shoptype" id="vo">
+                  <option value="{$vo.id}">{$vo.name}</option>
+                </volist>
+              </select></td>
+          </tr>
+          <tr>
+          	<td>资料下载</td>
+          	<td style="text-align:left"><input type="text" name="url" value="{$all.data}"></input></td>
+          </tr>
           <tr>
             <td colspan="2"><input type="submit" value="提交"></td>
-          </tr>
-   
+          </tr>   
       </table>
            </form>
     </div>

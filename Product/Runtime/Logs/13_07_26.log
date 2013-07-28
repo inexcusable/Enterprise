@@ -1,0 +1,21 @@
+[ 2013-07-26T16:55:57+08:00 ] 192.168.1.108 /product.php/Cookie?id=7
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_shop` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_shop` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: check D:\www\Enterprise\Product\Lib\Action\CookieAction.class.php 第 20 行.
+NOTIC: [8] Undefined variable: set D:\www\Enterprise\Core\Lib\Core\Db.class.php 第 283 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\www\Enterprise\Core\Lib\Core\Db.class.php 第 283 行.
+SQL: UPDATE `cd_shop` SET  WHERE ( id=7 ) [ RunTime:0.000000s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=7 )' at line 1
+ [ SQL语句 ] : UPDATE `cd_shop` SET  WHERE ( id=7 )
+
+[ 2013-07-26T16:55:58+08:00 ] 192.168.1.108 /product.php/Cookie/showcookie
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_shop` [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: cookie D:\www\Enterprise\Product\Lib\Action\CookieAction.class.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\Enterprise\Product\Lib\Action\CookieAction.class.php 第 27 行.
+

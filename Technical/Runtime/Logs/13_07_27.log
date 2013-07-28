@@ -1,0 +1,21 @@
+[ 2013-07-27T14:36:27+08:00 ] 192.168.1.110 /Technical.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.020002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001000s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000000s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2013-07-27T15:34:33+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2013-07-27T15:35:01+08:00 ] ERR: (ThinkException) 模板不存在[./Technical/Tpl/Index/index.html]
+[ 2013-07-27T15:35:04+08:00 ] ERR: (ThinkException) 模板不存在[./Technical/Tpl/Index/index.html]
+[ 2013-07-27T15:35:05+08:00 ] ERR: (ThinkException) 模板不存在[./Technical/Tpl/Index/index.html]

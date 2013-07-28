@@ -10,6 +10,10 @@ class ShopAction extends Action {
 		// /这里返回所有品牌
 		$mbrands = new Model ( "brands" );
 		$this->assign ( "brands", $mbrands->select () );
+		
+		//这里是返回所有的商品类型
+		$mshoptype=new Model("shoptype");
+		$this->assign("shoptype",$mshoptype->select());
 		if ($_GET ["id"] != null) {
 			$m = new Model ( "shop" );
 			$this->assign ( "all", $m->where ( "id=%d", $_GET ["id"] )->find () );
@@ -20,14 +24,19 @@ class ShopAction extends Action {
 	public function addupdate() {
 		extract ( $_POST );
 		$data ["webtitle"] = $webtitle;
+		$data ["property"]=$property;
+		$data["use"]=$use;
+		$data ["alt"]=$alt;
 		$data ["keyword"] = $keyword;
 		$data ["description"] = $description;
 		$data ["producttype"] = $producttype;
 		$data ["brands"] = $brands;
+		$data["intro"]=$intro;
 		$data ["title"] = $title;
 		$data ["time"] = $time;
 		$data ["body"] = stripslashes ($_POST['body']);
-		
+		$data["shoptype"]=$shoptype;
+		$data["data"]=$url;
 		$data ["unit"] = $unit;
 		$data ["status"] = $status;
 		import ( 'ORG.Net.UploadFile' );
@@ -77,9 +86,10 @@ class ShopAction extends Action {
 			$data ["image2"] = $info [2] ['savename'];
 			$data ["image3"] = $info [3] ['savename'];
 			$data ["image4"] = $info [4] ['savename'];
-			if ($m->add ( $data ) > 0) {
-				
-				$this->success ( "好的成功添加" );
+			$te=$m->add($data);
+			if ($te > 0) {
+				echo $te;
+				$this->success ( "好的成功添加","../New/showshopid?id=".$te );
 			}
 		}
 	}

@@ -76,7 +76,8 @@ $(function(){
                     <li><a href="Product/category" target="right">产品分类</a></li>
                     <li><a href="Brand/index" target="right">品牌分类</a></li>
                     <li><a href="Shop/manshop" target="right">产品管理</a></li>
-                    <li><a href="shop/manshop" target="right">品牌管理</a></li>
+                    <li><a href="Brand/branmain" target="right">品牌管理</a></li>
+                    <li><a href="Expert" target="right">高级产品</a></li>
                 </ul>
             </li>
             

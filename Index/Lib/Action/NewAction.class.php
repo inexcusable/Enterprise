@@ -2,6 +2,12 @@
 class NewAction extends Action {
 	public function index()
 	{
+		//这里加载所有的分类
+		$m=new Model("producttype");
+		$this->assign("all",$m->select());	
+		//这里是根据ID来返回新闻类型
+		$mtype=new Model("newtype");
+		$this->assign("newtype",$mtype->where("id=%d",$_GET["id"])->find());
 		$User = M('new'); // 实例化User对象
 		import('ORG.Util.Page');// 导入分页类
 		$count      = $User->where("newtype=%d",$_GET["id"])->count();// 查询满足要求的总记录数

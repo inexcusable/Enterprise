@@ -11,9 +11,7 @@
 <script>
         KindEditor.ready(function(K) {
                 window.editor = K.create('#body');
-        });
-		
-		
+        });		
 	function chekc()
 	{
 		if($("#title").val().length>80){
@@ -65,9 +63,17 @@ input {
             <td style="text-align:left"><input type="text" name="title" value="<?php echo ($all["title"]); ?>"></td>
           </tr>
           <tr>
-            <td>请输入商品计量单位</td>
+            <td>请输入商品多少吨</td>
             <td style="text-align:left"><input type="text" name="unit" value="<?php echo ($all["unit"]); ?>"></td>
           </tr>
+        <tr>
+        	<td>请输入商品性能</td>
+        	<td style="text-align: left;"><input type="text" name="property" value="<?php echo ($all["property"]); ?>"></input></td>
+        </tr>
+        <tr>
+        	<td>请输入商品用途</td>
+        	<td style="text-align: left"><input type="text" name="use" value="<?php echo ($all["use"]); ?>"></input></td>
+        </tr>
           <tr>
             <td>请上传商品图片</td>
             <td style="text-align:left"><input type="file" name="image1"></td>
@@ -89,8 +95,16 @@ input {
             <td style="text-align:left"><input type="file" name="image5"></td>
           </tr>
           <tr>
+          	<td>请输入图片描述</td>
+          	<td style="text-align: left"><input type="text" name="alt" value="<?php echo ($all["alt"]); ?>"></td>
+          </tr>
+          <tr>
             <td>请输入商品详情</td>
-            <td><textarea id="body" name="body" style="width:900px; height:400px;"><?php echo ($all["body"]); ?></textarea></td>
+            <td style="text-align:left"><textarea id="body" name="body" style="width:900px; height:400px;"><?php echo ($all["body"]); ?></textarea></td>
+          </tr>
+          <tr>
+          	<td>请输入商品简介</td>
+          	<td style="text-align:left"><textarea name="intro" style="width:900px;; height:100px; border: 1px solid" ><?php echo ($all["intro"]); ?></textarea></td>
           </tr>
           <tr>
             <td>请选择所属类别</td>
@@ -116,10 +130,19 @@ input {
                 <?php if(is_array($brands)): $i = 0; $__LIST__ = $brands;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
               </select></td>
           </tr>
+             <tr>
+            <td>请选择商品类型</td>
+            <td style="text-align:left"><select name="shoptype">
+                <?php if(is_array($shoptype)): $i = 0; $__LIST__ = $shoptype;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+              </select></td>
+          </tr>
+          <tr>
+          	<td>资料下载</td>
+          	<td style="text-align:left"><input type="text" name="url" value="<?php echo ($all["data"]); ?>"></input></td>
+          </tr>
           <tr>
             <td colspan="2"><input type="submit" value="提交"></td>
-          </tr>
-   
+          </tr>   
       </table>
            </form>
     </div>

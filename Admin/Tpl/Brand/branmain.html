@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__PUBLIC__/images/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background:#FFF
+}
+</style>
+</head>
+
+<body>
+<div id="contentWrap">
+  <div id="widget table-widget">
+    <div class="pageTitle">品牌管理</div>
+    <div class="pageColumn">
+      <div class="pageButton"></div>
+      <table>
+       		<tr>
+       			<td>名字</td>
+       			<td>图片</td>
+       			<td>所属公司</td>
+       			<td>所在地</td>
+       			<td>类别</td>
+       			<td>操作</td>
+       		</tr>
+       	<volist name="all" id="vo">
+			<tr>
+				<td>{$vo.name}</td>
+				<td>{$vo.image}</td>
+				<td>{$vo.connname}</td>
+				<td>{$vo.address}</td>
+				<td><eq name="vo.isimport" value="0">国产<else/>进口</eq>
+				</td>
+				<td><a href="__URL__/upbrands?id={$vo.id}">修改</a>------<a href="__URL__/delbrands?id={$vo.id}">删除</a></td>
+			</tr>
+</volist>
+       			<tr>
+				<td colspan="6">{$page}</td>
+			</tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

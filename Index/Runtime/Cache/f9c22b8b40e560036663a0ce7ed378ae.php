@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="__PUBLIC__/statics/style.css" type="text/css" />
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/themes/buy2012/images/css.css" />
 <script type="text/javascript">
-var Shop = {"set":{"path":"/","buytarget":"3","dragcart":null,"refer_timeout":365},"url":{"addcart":"http://www.qizejx.cn/?cart-ajaxadd.html","shipping":"http://www.qizejx.cn/?cart-shipping.html","payment":"http://www.qizejx.cn/?cart-payment.html","total":"http://www.qizejx.cn/?cart-total.html","viewcart":"http://www.qizejx.cn/?cart-view.html","ordertotal":"http://www.qizejx.cn/?cart-total.html","applycoupon":"http://www.qizejx.cn/?cart-applycoupon.html","diff":"http://www.qizejx.cn/?product-diff.html"}};
+var Shop = {"set":{"path":"/","buytarget":"3","dragcart":null,"refer_timeout":365},"url":{"addcart":"/","shipping":"/","payment":"/","total":"/","viewcart":"/","ordertotal":"/","applycoupon":"/","diff":"/"}};
 </script>
 <script type="text/javascript" src="__PUBLIC__/statics/script/tools.js"></script>
 <script type="text/javascript" src="__PUBLIC__/statics/script/goodscupcake.js"></script>
@@ -80,15 +80,15 @@ window.addEvent('domready',function(){
 <body>
 <div class="AllWrap headerInfo">
   <div class="tangdd"></div>
-  <div class="qbspfl" style="top: 225px;"> <a href="./?page-fl.html">全部商品分类</a> </div>
-  <div class="tangzdy"> <font color="#660000" face="黑体"><font size="2" face="宋体">您好，欢迎来到起虎跃机械网上商城！</font><a href="#"type="url"><font size="2">这里就放关键字就行了</font></a> </div>
+  <div class="qbspfl" style="top: 225px;"> <a href="/">全部商品分类</a> </div>
+  <div class="tangzdy"> <font color="#660000" face="黑体"><font size="2" face="宋体">您好，欢迎来到起虎跃机械网上商城！</font><a href="#"type="url"><font size="2">这里就放关键字就行了</font></a> </font></div>
   <div class="qingzdy"></div>
   <div class="logo"> <a href="/"><img
 				src="__PUBLIC__/themes/buy2012/images/loge.png"
 				border="0" style="margin-top: 20px" /></a> </div>
   <div class="searchbar">
-    <form action="index.php/Search" method="post"
-				class="SearchBar">
+    <form action="/index.php/Search" method="post" class="SearchBar">
+				
       <table cellpadding="0" cellspacing="0">
         <tr>
           <td class="search_label"><span>关键字：</span>
@@ -117,29 +117,12 @@ window.addEvent('domready',function(){
 					href="/new/about.html">虎跃介绍</a></li>
       <li><a href="#">品牌专区</a></li>
       <li><a
-					href="index.php/New?id=1">公司动态</a></li>
+					href="/index_1.html">公司动态</a></li>
       <li><a
-					href="index.php/New?id=2">行业新闻</a></li>
+					href="/technical.html">技术资料</a></li>
       <li><a
-					href="/new/con.html">联系我们</a></li>
-      <li><a href="#">客户留言</a></li>
-      <li style="position: relative; z-index: 65535;"
-					class="wgt-menu-more" id="widgets_89_menu_base"
-					onClick="if($('widgets_89_showMore').style.display=='none'){$('widgets_89_showMore').style.display='';}else{ $('widgets_89_showMore').style.display='none';}"><a
-					class="wgt-menu-view-more" href="JavaScript:void(0)">更多导航</a>
-        <div class="v-m-page"
-						style="display: none; position: absolute; top: 25px; left: 0"
-						id="widgets_89_showMore">
-          <div> <a
-								href="http://www.qizejx.cn/?page-%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6.html">资质证书</a> </div>
-          <div> <a
-								href="http://www.qizejx.cn/?page-%E7%BD%91%E7%BB%9C%E8%90%A5%E9%94%80.html">网络营销</a> </div>
-          <div> <a href="http://www.qizejx.cn/?artlist-119.html">动态新闻</a> </div>
-          <div> <a
-								href="http://www.qizejx.cn/?page-%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%BF%83.html">帮助中心</a> </div>
-          <div> <a href="http://www.qizejx.cn/?link-showList.html">友情链接</a> </div>
-        </div>
-      </li>
+					href="/new/lianxi.html">联系我们</a></li>
+      <li><a href="#">网站地图</a></li>
     </ul>
     <script>
 if($('widgets_89_showMore')){
@@ -148,8 +131,7 @@ if($('widgets_89_showMore')){
 </script> 
   </div>
   <div class="loginbar">
-    <div class="fr topmenu"> <a href="http://www.qizejx.cn//?page-about.html">关于我们</a> <a
-					href="http://www.qizejx.cn/?page-%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE.html">支付方式</a> <a href="http://www.qizejx.cn//?/page-helpcenter.html">帮助中心</a> </div>
+    <div class="fr topmenu"></div>
   </div>
   <div id="menum">
     <div id="outer">
@@ -177,7 +159,7 @@ if($('widgets_89_showMore')){
 	height: 32px;
 	line-height: 31px;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/m_cat_icon.gif")
+		url("")
 		no-repeat center 0;
 	text-indent: -9999px;
 	text-align: center;
@@ -202,7 +184,7 @@ if($('widgets_89_showMore')){
 	height: 30px;
 	padding: 0px 0px 0px 0px;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/16.gif")
+		url("")
 		no-repeat 188px center;
 	z-index: 8;
 }
@@ -210,7 +192,7 @@ if($('widgets_89_showMore')){
 .m-cat-depth-1 .depth-1 em {
 	display: block;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/15.jpg")
+		url("")
 		no-repeat 10px center;
 	padding-left: 19px;
 	height: 30px;
@@ -257,7 +239,7 @@ if($('widgets_89_showMore')){
 	display: none; /* top:30px;*/
 	width: 467px;
 	background: #fff
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/17.gif")
+		url("")
 		left top repeat-y;
 	border: 1px solid #c00;
 	border-left: 0px;
@@ -340,14 +322,14 @@ if($('widgets_89_showMore')){
 	padding: 0px 10px 0px 10px;
 	float: left;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/18.jpg")
+		url("")
 		left no-repeat;
 	white-space: nowrap;
 }
 
 .m-cat-drop-3 a:hover {
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/18.jpg")
+		url("s")
 		left no-repeat;
 }
 
@@ -519,7 +501,7 @@ if (objMenu) {
 	height: 32px;
 	line-height: 31px;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/m_cat_icon.gif")
+		url("")
 		no-repeat center 0;
 	text-indent: -9999px;
 	text-align: center;
@@ -544,7 +526,7 @@ if (objMenu) {
 	height: 30px;
 	padding: 0px 0px 0px 0px;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/16.gif")
+		url("")
 		no-repeat 188px center;
 	z-index: 8;
 }
@@ -552,7 +534,7 @@ if (objMenu) {
 .m-cat-depth-1 .depth-1 em {
 	display: block;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/15.jpg")
+		url("")
 		no-repeat 10px center;
 	padding-left: 19px;
 	height: 30px;
@@ -599,7 +581,7 @@ if (objMenu) {
 	display: none; /* top:30px;*/
 	width: 467px;
 	background: #fff
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/17.gif")
+		url("")
 		left top repeat-y;
 	border: 1px solid #c00;
 	border-left: 0px;
@@ -682,14 +664,14 @@ if (objMenu) {
 	padding: 0px 10px 0px 10px;
 	float: left;
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/18.jpg")
+		url("")
 		left no-repeat;
 	white-space: nowrap;
 }
 
 .m-cat-drop-3 a:hover {
 	background:
-		url("http://www.qizejx.cn/plugins/widgets/ducegoodscat/images/18.jpg")
+		url("")
 		left no-repeat;
 }
 
@@ -757,16 +739,16 @@ if (objMenu) {
 </style>
         <div class="DuceDropNavs">
           <ul>
-            <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo["sid"]) == "0"): ?><li class="m-cat-depth-1"><a class="depth-1" href="Product.php?id=<?php echo ($vo["id"]); ?>"><em><?php echo ($vo["name"]); ?></em></a>
+            <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo["sid"]) == "0"): ?><li class="m-cat-depth-1"><a class="depth-1" href="/Product_<?php echo ($vo["id"]); ?>.html"><em><strong><?php echo ($vo["name"]); ?></strong></em></a>
                   <ul class="m-cat-popup">
                     <div class="hei">
                       <ul class="m-cat-drop-2">
                         <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i; if(($vo[id]) == $vo2["sid"]): ?><li class="m-cat-depth-0">
                               <table width="460" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                  <td width="75" align="right"><a class="m-depth-2" href="Product.php?id=<?php echo ($vo["id"]); ?>"><?php echo ($vo2["name"]); ?></a></td>
+                                  <td width="75" align="right"><a class="m-depth-2" href="/Product_<?php echo ($vo2["id"]); ?>.html"><?php echo ($vo2["name"]); ?></a></td>
                                   <td><ul class="m-cat-drop-3">
-                                      <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i; if(($vo2["id"]) == $vo3["sid"]): ?><a href="Product.php?id=<?php echo ($vo["id"]); ?>"><?php echo ($vo3["name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                      <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i; if(($vo2["id"]) == $vo3["sid"]): ?><a href="/Product_<?php echo ($vo3["id"]); ?>.html"><?php echo ($vo3["name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                                     </ul></td>
                                 </tr>
                               </table>
@@ -988,19 +970,19 @@ window.addEvent('domready',function(e){
       <ul class="slideWrap" style="overflow: overflow; height: 280px;">
         <li class="slideitem" style="float: left"><a href=""><img
 							width="550" height="280"
-							src="http://www.qizejx.cn/themes/buy2012/images/g1.jpg" /></a></li>
+							src="/images/1.jpg" /></a></li>
         <li class="slideitem" style="float: left"><a href=""><img
 							width="550" height="280"
-							src="http://www.qizejx.cn/themes/buy2012/images/g2.jpg" /></a></li>
+							src="/images/2.jpg" /></a></li>
         <li class="slideitem" style="float: left"><a href=""><img
 							width="550" height="280"
-							src="http://www.qizejx.cn/themes/buy2012/images/g3.jpg" /></a></li>
+							src="/images/3.jpg" /></a></li>
         <li class="slideitem" style="float: left"><a href=""><img
 							width="550" height="280"
-							src="http://www.qizejx.cn/themes/buy2012/images/g4.jpg" /></a></li>
+							src="/images/4.jpg" /></a></li>
         <li class="slideitem" style="float: left"><a href=""><img
 							width="550" height="280"
-							src="http://www.qizejx.cn/themes/buy2012/images/g5.jpg" /></a></li>
+							src="/images/5.jpg" /></a></li>
       </ul>
     </div>
     <div id="slidewigetscontrol">
@@ -1067,10 +1049,10 @@ window.addEvent('domready',function(e){
 
 										var ad_style = "normal";
 
-										var link_arr = "http://www.qizejx.cn/images//20130620/560a482685bad118.jpg|http://www.qizejx.cn/images//20130620/e6d2855e32321aac.jpg|http://www.qizejx.cn/images//20130620/9980866ab0c479c4.jpg|http://www.qizejx.cn/images//20130620/4efa3fdb73945215.jpg"
+										var link_arr = ""
 												.trim();
 
-										var linktarget_arr = "http://www.qizejx.cn/?page-memberrank.html|http://www.qizejx.cn/?page-memberrank.html|http://www.qizejx.cn/?page-memberrank.html|"
+										var linktarget_arr = ""
 												.trim();
 
 										var image_length = getLength(4);
@@ -1259,7 +1241,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_114_list0">
           <?php if(is_array($re)): $i = 0; $__LIST__ = $re;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="292" style="width: 24%;">
               <div class="item">
-                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
                 <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?><br />
                   </a> </h6>
                 <ul>
@@ -1273,7 +1255,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_114_list1" style="display: none">
           <?php if(is_array($Added)): $i = 0; $__LIST__ = $Added;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="409" style="width: 24%;">
               <div class="item">
-                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
                 <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?><br />
                   </a> </h6>
                 <ul>
@@ -1287,7 +1269,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_114_list2" style="display: none">
           <?php if(is_array($Hot)): $i = 0; $__LIST__ = $Hot;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="179" style="width: 24%;">
               <div class="item">
-                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
                 <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?><br />
                   </a> </h6>
                 <ul>
@@ -1301,7 +1283,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_114_list3" style="display: none">
           <?php if(is_array($Pro)): $i = 0; $__LIST__ = $Pro;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
               <div class="item">
-                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
                 <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?><br />
                   </a> </h6>
                 <ul>
@@ -1315,7 +1297,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_114_list4" style="display: none">
           <?php if(is_array($like)): $i = 0; $__LIST__ = $like;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1183" style="width: 24%;">
               <div class="item">
-                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+                <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html"	target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"></a> </div>
                 <h6>
                 <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?><br />
                 <ul>
@@ -1342,7 +1324,7 @@ window.addEvent('domready',function(e){
           </ul>
         </div>
         <div class="more clearfix"> <a
-							href="http://www.qizejx.cn/?gallery-_ANY_-b,_ANY__t,_ANY_-5-grid.html">更多...</a> </div>
+							href="#">更多...</a> </div>
       </div>
     </div>
   </div>
@@ -1355,10 +1337,10 @@ window.addEvent('domready',function(e){
     </div>
     <div class="spbg">
       <div class="spbga">
-        <?php if(is_array($all1)): $i = 0; $__LIST__ = $all1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product.php?id=<?php echo ($vo["id"]); ?>">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php if(is_array($all1)): $i = 0; $__LIST__ = $all1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product_<?php echo ($vo["id"]); ?>.html">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
       </div>
       <div class="spbgb">
-        <div class="AdvBanner"> <a href="/product.php?id=<?php echo ($vo["id"]); ?>" target="_blank"> <img
+        <div class="AdvBanner"> <a href="/product_<?php echo ($vo["id"]); ?>.html" target="_blank"> <img
 							src='__PUBLIC__/themes/buy2012/images/ti1.jpg' style="" /> </a> </div>
       </div>
     </div>
@@ -1426,7 +1408,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_119_list0">
         <?php if(is_array($shola)): $i = 0; $__LIST__ = array_slice($shola,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1435,7 +1417,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
                   <?php if(is_array($shola)): $i = 0; $__LIST__ = array_slice($shola,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1450,7 +1432,7 @@ window.addEvent('domready',function(e){
         
         <?php if(is_array($shoban)): $i = 0; $__LIST__ = array_slice($shoban,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1464,7 +1446,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
                   <?php if(is_array($shoban)): $i = 0; $__LIST__ = array_slice($shoban,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1478,7 +1460,7 @@ window.addEvent('domready',function(e){
         
          <?php if(is_array($diand)): $i = 0; $__LIST__ = array_slice($diand,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="#/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="#/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1490,7 +1472,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
            <?php if(is_array($diand)): $i = 0; $__LIST__ = array_slice($diand,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1503,7 +1485,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_119_list3" style="display: none">
          <?php if(is_array($shouya)): $i = 0; $__LIST__ = array_slice($shouya,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1515,7 +1497,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
             <?php if(is_array($shouya)): $i = 0; $__LIST__ = array_slice($shouya,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1529,7 +1511,7 @@ window.addEvent('domready',function(e){
         
            <?php if(is_array($xuanbi)): $i = 0; $__LIST__ = array_slice($xuanbi,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1539,7 +1521,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($xuanbi)): $i = 0; $__LIST__ = array_slice($xuanbi,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1203" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6><a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1560,9 +1542,9 @@ window.addEvent('domready',function(e){
     </div>
     <div class="spbg">
       <div class="spbga"> 
-      <?php if(is_array($all2)): $i = 0; $__LIST__ = $all2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product.php?id=<?php echo ($vo["id"]); ?>">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?></div>
+      <?php if(is_array($all2)): $i = 0; $__LIST__ = $all2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product_<?php echo ($vo["id"]); ?>.html">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?></div>
       <div class="spbgb">
-        <div class="AdvBanner"> <a href="/product.php?id=<?php echo ($vo["id"]); ?>" target="_blank"> <img src='__PUBLIC__/themes/buy2012/images/ti3.jpg' style="" /> </a> </div>
+        <div class="AdvBanner"> <a href="/product_<?php echo ($vo["id"]); ?>.html" target="_blank"> <img src='__PUBLIC__/themes/buy2012/images/ti3.jpg' style="" /> </a> </div>
       </div>
     </div>
   </div>
@@ -1629,7 +1611,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_207_list0">
         	<?php if(is_array($banyun)): $i = 0; $__LIST__ = array_slice($banyun,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1639,7 +1621,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
            <?php if(is_array($banyun)): $i = 0; $__LIST__ = array_slice($banyun,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1652,7 +1634,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_207_list1" style="display: none">
         <?php if(is_array($dzsj)): $i = 0; $__LIST__ = array_slice($dzsj,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1661,7 +1643,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
                   <?php if(is_array($dzsj)): $i = 0; $__LIST__ = array_slice($dzsj,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1674,7 +1656,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_207_list2" style="display: none">        
          <?php if(is_array($gbdq)): $i = 0; $__LIST__ = array_slice($gbdq,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1683,7 +1665,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>          
          <?php if(is_array($gbdq)): $i = 0; $__LIST__ = array_slice($gbdq,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1696,7 +1678,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_207_list3" style="display: none">
         <?php if(is_array($ycxp)): $i = 0; $__LIST__ = array_slice($ycxp,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1705,7 +1687,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($ycxp)): $i = 0; $__LIST__ = array_slice($ycxp,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1718,7 +1700,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_207_list4" style="display: none">
          <?php if(is_array($thphq)): $i = 0; $__LIST__ = array_slice($thphq,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1727,7 +1709,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
                    <?php if(is_array($thphq)): $i = 0; $__LIST__ = array_slice($thphq,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="816" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img				src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1748,10 +1730,10 @@ window.addEvent('domready',function(e){
     </div>
     <div class="spbg">
       <div class="spbga">
-      <?php if(is_array($all3)): $i = 0; $__LIST__ = $all3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product.php?id=<?php echo ($vo["id"]); ?>">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+      <?php if(is_array($all3)): $i = 0; $__LIST__ = $all3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product_<?php echo ($vo["id"]); ?>.html">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
        </div>
       <div class="spbgb">
-        <div class="AdvBanner"> <a href="/product.php?id=<?php echo ($vo["id"]); ?>" target="_blank"> <img
+        <div class="AdvBanner"> <a href="/product_<?php echo ($vo["id"]); ?>.html" target="_blank"> <img
 							src='__PUBLIC__/themes/buy2012/images/ti4.jpg' style="" /> </a> </div>
       </div>
     </div>
@@ -1819,7 +1801,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_208_list0">
         
         <?php if(is_array($qjd)): $i = 0; $__LIST__ = array_slice($qjd,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1827,7 +1809,7 @@ window.addEvent('domready',function(e){
           </div><?php endforeach; endif; else: echo "" ;endif; ?>          
           <div class="clear"></div>
           <?php if(is_array($qjd)): $i = 0; $__LIST__ = array_slice($qjd,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1839,7 +1821,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_208_more_0" class="more" style=""></div>
         <div id="widgets_208_list1" style="display: none">
            <?php if(is_array($yyyg)): $i = 0; $__LIST__ = array_slice($yyyg,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1847,7 +1829,7 @@ window.addEvent('domready',function(e){
           </div><?php endforeach; endif; else: echo "" ;endif; ?>
           <div class="clear"></div>
            <?php if(is_array($yyyg)): $i = 0; $__LIST__ = array_slice($yyyg,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1859,7 +1841,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_208_more_1" class="more" style="display: none;"> </div>
         <div id="widgets_208_list2" style="display: none">
           <?php if(is_array($yybp)): $i = 0; $__LIST__ = array_slice($yybp,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1870,7 +1852,7 @@ window.addEvent('domready',function(e){
           
           <div class="clear"></div>
            <?php if(is_array($yybp)): $i = 0; $__LIST__ = array_slice($yybp,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1884,7 +1866,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_208_more_2" class="more" style="display: none;"> </div>
         <div id="widgets_208_list3" style="display: none">
          <?php if(is_array($yylm)): $i = 0; $__LIST__ = array_slice($yylm,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1895,7 +1877,7 @@ window.addEvent('domready',function(e){
           
           <div class="clear"></div>
            <?php if(is_array($yylm)): $i = 0; $__LIST__ = array_slice($yylm,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1907,7 +1889,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_208_more_3" class="more" style="display: none;"> </div>
         <div id="widgets_208_list4" style="display: none">
           <?php if(is_array($yadsp)): $i = 0; $__LIST__ = array_slice($yadsp,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1919,7 +1901,7 @@ window.addEvent('domready',function(e){
           
           <div class="clear"></div>
          <?php if(is_array($yadsp)): $i = 0; $__LIST__ = array_slice($yadsp,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="705" style="width: 24%;">
-            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+            <div class="item"><div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" 	width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -1940,10 +1922,10 @@ window.addEvent('domready',function(e){
     </div>
     <div class="spbg">
       <div class="spbga">
-      <?php if(is_array($all4)): $i = 0; $__LIST__ = $all4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product.php?id=<?php echo ($vo["id"]); ?>">·<?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+      <?php if(is_array($all4)): $i = 0; $__LIST__ = $all4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product_<?php echo ($vo["id"]); ?>.html">·<?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
        </div>
       <div class="spbgb">
-        <div class="AdvBanner"> <a href="/product.php?id=<?php echo ($vo["id"]); ?>" target="_blank"> <img
+        <div class="AdvBanner"> <a href="/product_<?php echo ($vo["id"]); ?>.html" target="_blank"> <img
 							src='__PUBLIC__/themes/buy2012/images/ti5.jpg' style="" /> </a> </div>
       </div>
     </div>
@@ -2011,7 +1993,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_209_list0">
         <?php if(is_array($dzxc)): $i = 0; $__LIST__ = array_slice($dzxc,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2020,7 +2002,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($dzxc)): $i = 0; $__LIST__ = array_slice($dzxc,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2033,7 +2015,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_209_list1" style="display: none">
           <?php if(is_array($gyykq)): $i = 0; $__LIST__ = array_slice($gyykq,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2042,7 +2024,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($gyykq)): $i = 0; $__LIST__ = array_slice($gyykq,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2055,7 +2037,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_209_list2" style="display: none">
           <?php if(is_array($hzhl)): $i = 0; $__LIST__ = array_slice($hzhl,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2064,7 +2046,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($hzhl)): $i = 0; $__LIST__ = array_slice($hzhl,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2077,7 +2059,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_209_list3" style="display: none">
                    <?php if(is_array($qzdsj)): $i = 0; $__LIST__ = array_slice($qzdsj,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2086,7 +2068,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
            <?php if(is_array($qzdsj)): $i = 0; $__LIST__ = array_slice($qzdsj,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2099,7 +2081,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_209_list4" style="display: none">
            <?php if(is_array($qzfzsb)): $i = 0; $__LIST__ = array_slice($qzfzsb,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2108,7 +2090,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($qzfzsb)): $i = 0; $__LIST__ = array_slice($qzfzsb,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="1139" style="width: 24%;">          
             <div class="item">
-              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg"	style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>"width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2128,10 +2110,10 @@ window.addEvent('domready',function(e){
     </div>
     <div class="spbg">
       <div class="spbga">
-      	<?php if(is_array($all5)): $i = 0; $__LIST__ = $all5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product.php?id=<?php echo ($vo["id"]); ?>">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+      	<?php if(is_array($all5)): $i = 0; $__LIST__ = $all5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/product_<?php echo ($vo["id"]); ?>.html">· <?php echo ($vo["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
                    </div>
       <div class="spbgb">
-        <div class="AdvBanner"> <a href="/product.php?id=<?php echo ($vo["id"]); ?>" target="_blank"> <img
+        <div class="AdvBanner"> <a href="/product_<?php echo ($vo["id"]); ?>.html" target="_blank"> <img
 							src='__PUBLIC__/themes/buy2012/images/ti6.jpg' style="" /> </a> </div>
       </div>
     </div>
@@ -2199,7 +2181,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_210_list0">
         <?php if(is_array($qzdq)): $i = 0; $__LIST__ = array_slice($qzdq,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2208,7 +2190,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($qzdq)): $i = 0; $__LIST__ = array_slice($qzdq,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>/"></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2221,7 +2203,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_210_list1" style="display: none">
          <?php if(is_array($qzdh)): $i = 0; $__LIST__ = array_slice($qzdh,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2230,7 +2212,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
                    <?php if(is_array($qzdh)): $i = 0; $__LIST__ = array_slice($qzdh,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2243,7 +2225,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_210_list2" style="display: none">
            <?php if(is_array($lttjq)): $i = 0; $__LIST__ = array_slice($lttjq,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2252,7 +2234,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
             <?php if(is_array($lttjq)): $i = 0; $__LIST__ = array_slice($lttjq,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2265,7 +2247,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_210_list3" style="display: none">
           <?php if(is_array($qzxk)): $i = 0; $__LIST__ = array_slice($qzxk,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2274,7 +2256,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
           <?php if(is_array($qzxk)): $i = 0; $__LIST__ = array_slice($qzxk,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2287,7 +2269,7 @@ window.addEvent('domready',function(e){
         <div id="widgets_210_list4" style="display: none">
            <?php if(is_array($dsjlj)): $i = 0; $__LIST__ = array_slice($dsjlj,0,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2296,7 +2278,7 @@ window.addEvent('domready',function(e){
           <div class="clear"></div>
         <?php if(is_array($dsjlj)): $i = 0; $__LIST__ = array_slice($dsjlj,4,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="itemsWrap " product="933" style="width: 24%;">
             <div class="item">
-              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" title="<?php echo ($vo["title"]); ?>"></a> </div>
+              <div class="goodsImg" style="overflow: hidden; text-align: center; vertical-align: middle; width: 130px; height: 130px;"> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><img src="__PUBLIC__/Uploads/<?php echo ($vo["image"]); ?>" width="130" height="130" alt="<?php echo ($vo["alt"]); ?>" title="<?php echo ($vo["alt"]); ?>"/></a> </div>
               <h6> <a href="/Article/<?php echo ($vo["id"]); ?>.html" target="_blank" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a> </h6>
               <ul>
               </ul>
@@ -2313,258 +2295,50 @@ window.addEvent('domready',function(e){
   <div class="fl" style="width: 772px;"></div>
   <div class="fr" style="width: 218px;"></div>
 </div>
-<div class="AllWrap footer">
-  <div class="foota">
-    <div class="bordercc " id="widgets_76">
-      <div class="border-top">
-        <h3>关于我们</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-notice.html">起泽介绍</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-memberrank.html">资质证书</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-orderstatus.html">合作伙伴</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-scoreplan.html">行业新闻</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-returngood.html">联系我们</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width: 103px;">
-    <div class="bordercc " id="widgets_77">
-      <div class="border-top">
-        <h3>配送方式</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-shipping.html">上海地区配送</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-orderinfo.html">外埠、外地配送</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E4%B8%8A%E6%B5%B7%E5%9C%B0%E5%8C%BA%E9%85%8D%E9%80%81.html">邮政快递EMS</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-shippinginfo.html">关于送货和验货</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width: 102px;">
-    <div class="bordercc " id="widgets_78">
-      <div class="border-top">
-        <h3>支付方式</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE.html">货到付款</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E4%B8%AA%E4%BA%BA%E8%B4%A6%E6%88%B7.html">个人账户</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E9%93%B6%E8%A1%8C%E7%94%B5%E6%B1%87.html">银行电汇</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E5%85%AC%E5%8F%B8%E8%BD%AC%E8%B4%A6.html">公司转账</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BB%98%E6%AC%BE.html">支付宝付款</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-onlinepayment.html">网上支付小贴士</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width: 103px;">
-    <div class="bordercc " id="widgets_79">
-      <div class="border-top">
-        <h3>购物指南</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-nonmember.html">顾客必读</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-terms.html">购买流程</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-process.html">购买保障</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-service.html">体贴的售后服务</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-disclaimer.html">网站免责声明</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E5%95%86%E5%93%81%E9%80%80%E6%8D%A2%E8%B4%A7%E4%BF%9D%E9%9A%9C.html">商品退换货保障</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width: 103px;">
-    <div class="bordercc " id="widgets_80">
-      <div class="border-top">
-        <h3>售后服务</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-license.html">退换货政策</a> </div>
-          <div class="cat2"> <a href="http://www.qizejx.cn/?page-privacy.html">隐私保护政策</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E5%AE%89%E5%85%A8%E6%80%A7%E8%AF%B4%E6%98%8E.html">安全性说明</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E4%BA%89%E8%AE%AE%E5%A4%84%E7%90%86.html">争议处理</a> </div>
-          <div class="cat2"> <a
-								href="http://www.qizejx.cn/?page-%E9%83%91%E9%87%8D%E5%A3%B0%E6%98%8E.html">郑重声明</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footar"></div>
-  <div class="clear"></div>
+ <div style="margin-top:40px" class="di">
+<div class="di_1">
+<div class="di_2">
+<div class="di_3"><b>关于虎跃</b></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/about/">成都虎跃</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/kuaijietongdao/ryzz.html">荣誉资质</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/a/guanyuhuyue/zzsm.html">郑重声明</a></div></div>
+<div class="di_2">
+<div class="di_3"><b>交易方式</b></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/jiaoyifangshi/yxhk.html">银行汇款</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/jiaoyifangshi/bdjy.html">本地交易</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/jiaoyifangshi/psfs.html">配送方式</a></div></div>
+<div class="di_2">
+<div class="di_3"><b>售后服务</b> </div>
+<div class="di_3"><a href="http://www.cdhyqz.com/shouhoufuwu/thzn.html">退换指南</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/shouhoufuwu/thyz.html">退换原则</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/shouhoufuwu/thlc.html">退换流程</a></div></div>
+<div class="di_2">
+<div class="di_3"><b>快捷通道</b> </div>
+<div class="di_3"><a href="http://www.cdhyqz.com/kuaijietongdao/cjwt.html">常见问题</a></div>
+<div class="di_3"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=470652675&amp;site=qq&amp;menu=yes">在线留言</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/contact/">联系我们</a></div></div>
+
+<div style="clear:both; margin-top:20px">
+
+<p>版权归成都虎跃机电设备有限公司所有 备案序号：蜀ICP备12021182号</p>
+<p>电话：028-83131290 18702890692  QQ：470652675 48525281 地址：四川省成都市洞子口路沙河源上金府 邮编:610030 </p>
+<p>吊装带、环链电动葫芦、永磁起重器、钢板起重钳、链条/吊带索具、手拉葫芦、弹簧平衡器、五一/武林手拉葫芦、五一/飞鸽手拉葫芦</p>
+
+<p><a href="http://webscan.360.cn"><img border="0" src="http://webscan.360.cn/status/pai/hash/02521a828acb1a3c63d39ea530223046" alt="安全网站"></a>
+
+<a title="加速乐统计" href="http://www.jiasule.com/analytics/login/?site=http://cdhyqz.com/" target="_blank"><img border="0" src="http://static.jiasule.com/static/images/stat/stat.png" alt="加速乐统计"></a>
+<a title="安全联盟" id="scanv_verify_link" href="http://www.anquan.org/seccenter/search/http://cdhyqz.com/"><img border="0" src="http://static.anquan.org/static/images/scanv_sec_1_127x47.png" alt="安全联盟"></a>
+</p>
+<div style="flot: left; padding-top: 0px; height: 50px; clear: both;">
+                                <img src="/images/temp1.gif" alt="举报">
+                                <img src="/images/temp2.gif" alt="行业分类">
+                                <img src="/images/temp3.gif" alt="运营许可">
+                                <img src="/images/temp4.gif" alt="网站识别">
+                                <img src="/images/temp5.gif" alt="备案信息">
+                                </div>
 </div>
-<div style="line-height: 24px; overflow: hidden; text-align: center;"> <img src="index.php?cron=page%3Aindex&p=" width="1" height="1"
-			border="none" />
-  <div id='template-modal' style='display: none;'>
-    <div class='dialog'>
-      <div class='dialog-title'>
-        <div class='title span-auto'>{title}</div>
-        <div class='dialog-close-btn'>X</div>
-        <div style="clear: both"></div>
-      </div>
-      <div class='dialog-content'>{content}</div>
-    </div>
-  </div>
-  <style id="thridpartystyle">
-.thridpartyicon {
-	background: url(__PUBLIC__/statics/icons/thridparty0.gif) no-repeat left center;
-	height: 30px;
-	line-height: 30px;
-	text-indent: 35px;
-}
-
-#accountlogin {
-	width: 180px;
-	border: 2px solid #badbf2;
-	position: absolute;
-	background: #fff;
-	padding: 5px;
-}
-
-#accountlogin h5 {
-	border-bottom: 1px solid #e2e2e2;
-	margin: 0px 5px 10px 5px;
-	padding: 0;
-	height: 22px;
-	line-height: 22px;
-	color: #333333;
-	font-weight: normal;
-}
-
-#accountlogin .logoimg {
-	float: left;
-	margin-left: 5px;
-}
-
-#accountlogin .logoimg span img {
-	margin: 6px 3px 0 3px;
-}
-
-#accountlogin .more {
-	text-align: right;
-	float: right;
-}
-
-#accountlogin .more a {
-	text-decoration: underline;
-}
-
-.trustlogos li {
-	display: inline;
-	padding: 2px;
-}
-
-.btn-trustlogin {
-	background: url(statics/btn-trustlogin.gif);
-	width: 87px;
-	height: 30px;
-	margin-bottom: 35px;
-}
-
-.trustdialog .dialog-content {
-	padding: 0px;
-	height: 320px;
-}
-
-.RegisterWrap {
-	
-}
-
-.RegisterWrap h4 {
-	height: 30px;
-	line-height: 30px;
-}
-
-.RegisterWrap .more {
-	height: 30px;
-	line-height: 30px;
-	text-align: right;
-	font-size: 14px;
-	color: #333333;
-}
-
-.RegisterWrap .more a {
-	text-decoration: underline;
-}
-
-.RegisterWrap .form {
-	
-}
-
-.RegisterWrap #formlogin,.RegisterWrap #formthridlogin {
-	height: 160px;
-	border: 1px solid #CCCCCC;
-	margin: 10px 0;
-	padding: 15px;
-}
-
-.RegisterWrap .customMessages {
-	height: 40px;
-}
-
-.dialog-title {
-	margin: 0 5px;
-}
-
-.dialog-title .title {
-	padding: 10px 0 2px 10px;
-}
-
-.dialog-title .dialog-close-btn {
-	font-family: Arial Black;
-	color: #fff;
-	background: #FF9955;
-	border: 1px #FA6400 solid;
-	font-size: 14px;
-	cursor: pointer;
-	width: 21px;
-	margin-top: 5px;
-	text-align: center;
-}
-
-.dialog-title .dialog-close-btn:hover {
-	background: #ff6655;
-	border-color: #ff6655;
-}
-</style>
-  <script>
-			$('thridpartystyle').inject(document.head);
-		</script>
-  <div class="themefoot">
-    <div class="themefootText textcenter"> <img
-					src="http://www.qizejx.cn/images//20121014/ac5cd606dc3fc5b0.jpg"><br />
-      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"
-						width="100%">
-        <tbody>
-          <tr>
-            <td><div align="center"> <img
-											src="http://www.qizejx.cn/images//20121015/db19ed0b0069b188.gif"> <img
-											src="http://www.qizejx.cn/images//20121015/f0c8a8c3a0c4c32f.jpg"> <img
-												src="http://www.qizejx.cn/images//20121015/fe5df7463bac8bb2.png"><strong>&nbsp;&nbsp; </strong><font color="#990000" size="3"> </font> </div></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div
-			style="font-family: Verdana; line-height: 20px !important; height: auto !important; font-size: 11px !important; text-align: center; overflow: none !important; text-indent: 0 !important;"> <a href="http://www.miibeian.gov.cn/" target="blank"
-				style="color: #666; text-decoration: none; cursor: pointer; display: block;"
-				class="textcenter">沪ICP备09062953号-9 </a><span style="display: none"></span> </div>
+<div>
+ </div></div>
 </div>
 </body>
 </html>

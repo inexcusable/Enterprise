@@ -2,9 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content=''>
+<title>成都虎跃-<?php echo ($newtype["name"]); ?></title>
+<meta name="keywords" content='"'/>
 <link rel="stylesheet" href="__PUBLIC__/statics/style.css" type="text/css" />
 <script type="text/javascript">
 var Shop = {"set":{"path":"/","buytarget":"3","dragcart":null,"refer_timeout":365},"url":{"addcart":"http://www.qizejx.cn/?cart-ajaxadd.html","shipping":"http://www.qizejx.cn/?cart-shipping.html","payment":"http://www.qizejx.cn/?cart-payment.html","total":"http://www.qizejx.cn/?cart-total.html","viewcart":"http://www.qizejx.cn/?cart-view.html","ordertotal":"http://www.qizejx.cn/?cart-total.html","applycoupon":"http://www.qizejx.cn/?cart-applycoupon.html","diff":"http://www.qizejx.cn/?product-diff.html"}};
@@ -84,19 +83,18 @@ window.addEvent('domready',function(){
 <div class="AllWrap headerInfo">
   <div class="tangdd"></div>
   <div class="qbspfl" style="top: 225px;"><a href="">全部商品分类</a></div>
-  <div class="tangzdy"><font color="#660000" face="黑体"><font size="2" face="宋体">您好，欢迎来到起泽起重机械网上商城！</font><a href="" type="url"><font size="2">电动葫芦</font></a><font size="2">，</font><a href="" type="url"><font size="2">液压千斤顶</font></a><font size="2">，</font><a href="" type="url"><font size="2">手拉葫芦</font></a><font size="2">，</font><a href="" type="url"><font size="2">手扳葫芦</font></a><font size="2">，</font><a href="" type="url"><font size="2">吊装设备</font></a><font size="2">，</font><a href="" type="url"><font size="2">液压搬运车</font></a></font></div>
+  <div class="tangzdy"><font color="#660000" face="黑体"><font size="2" face="宋体">您好，欢迎来到虎跃起重机械网上商城！</font><a href="" type="url"><font size="2">电动葫芦</font></a><font size="2">，</font><a href="" type="url"><font size="2">液压千斤顶</font></a><font size="2">，</font><a href="" type="url"><font size="2">手拉葫芦</font></a><font size="2">，</font><a href="" type="url"><font size="2">手扳葫芦</font></a><font size="2">，</font><a href="" type="url"><font size="2">吊装设备</font></a><font size="2">，</font><a href="" type="url"><font size="2">液压搬运车</font></a></font></div>
   <div class="qingzdy"></div>
   <div class="logo"><a href="./"><img src="__PUBLIC__/themes/buy2012/images/loge.png" border="0"/></a></div>
   <div class="searchbar">
-      <form action="__URL__" method="post"
-				class="SearchBar">
+      <form action="index.php/Search" method="post"	class="SearchBar">
       <table cellpadding="0" cellspacing="0">
         <tr>
           <td class="search_label"><span>关键字：</span>
             <input
-							name="name" size="10" class="inputstyle keywords" value="" /></td>
+							name="name[]" size="10" class="inputstyle keywords" value="" /></td>
           <td><input type="submit" value="搜索" class="btn_search"
-							 /></td>
+							onfocus='this.blur();' /></td>
           <td><a href="#"
 							class="btn_advsearch">高级搜索</a></td>
         </tr>
@@ -108,13 +106,17 @@ window.addEvent('domready',function(){
   <div style="color: #EEEFF1; left: 200px; position: absolute; top: 160px;"><img src="__PUBLIC__/themes/buy2012/images/kouhao.png" /></div>
   <div class="tangnav" id="Menu">
     <ul class="MenuList">
-      <li><a  href="/" >首页</a></li>
-      <li><a  href="/new/about.html">虎跃介绍</a></li>
-      <li><a  href="#">品牌专区</a></li>
-      <li><a  href="#">公司动态</a></li>
-      <li><a  href="#">行业新闻</a></li>
-      <li><a  href="#">技术资料</a></li>
-      <li><a  href="#">客户留言</a></li>
+            <li><a href="/">首页</a></li>
+      <li><a
+					href="/new/about.html">虎跃介绍</a></li>
+      <li><a href="#">品牌专区</a></li>
+      <li><a
+					href="/index_1.html">公司动态</a></li>
+      <li><a
+					href="/index_2.html">行业新闻</a></li>
+      <li><a
+					href="/new/lianxi.html">联系我们</a></li>
+      <li><a href="#">客户留言</a></li>
       <li style="position:relative;z-index:65535;" class="wgt-menu-more" id="widgets_89_menu_base" onClick="if($('widgets_89_showMore').style.display=='none'){$('widgets_89_showMore').style.display='';}else{ $('widgets_89_showMore').style.display='none';}"><a class="wgt-menu-view-more" href="JavaScript:void(0)">更多导航</a>
         <div class="v-m-page" style="display:none;position:absolute; top:25px; left:0" id="widgets_89_showMore">
           <div><a href="http://www.qizejx.cn/?page-%E8%B5%84%E8%B4%A8%E8%AF%81%E4%B9%A6.html">资质证书</a></div>
@@ -153,16 +155,16 @@ if($('widgets_89_showMore')){
                       <div class="DuceDropNavs">
                         <div class="DuceDropNavs">
                           <ul>
-                            <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo["sid"]) == "0"): ?><li class="m-cat-depth-1"><a class="depth-1" href="#"><em><?php echo ($vo["name"]); ?></em></a>
+                            <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo["sid"]) == "0"): ?><li class="m-cat-depth-1"><a class="depth-1" href="/Product_<?php echo ($vo["id"]); ?>.html"><em><?php echo ($vo["name"]); ?></em></a>
                                   <ul class="m-cat-popup">
                                     <div class="hei">
                                       <ul class="m-cat-drop-2">
                                         <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i; if(($vo[id]) == $vo2["sid"]): ?><li class="m-cat-depth-0">
                                               <table width="460" border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
-                                                  <td width="75" align="right"><a class="m-depth-2" href="#"><?php echo ($vo2["name"]); ?></a></td>
+                                                  <td width="75" align="right"><a class="m-depth-2" href="/Product_<?php echo ($vo2["id"]); ?>.html"><?php echo ($vo2["name"]); ?></a></td>
                                                   <td><ul class="m-cat-drop-3">
-                                                      <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i; if(($vo2["id"]) == $vo3["sid"]): ?><a href="#"><?php echo ($vo3["name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                                      <?php if(is_array($all)): $i = 0; $__LIST__ = $all;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i; if(($vo2["id"]) == $vo3["sid"]): ?><a href="/Product_<?php echo ($vo3["id"]); ?>.html"><?php echo ($vo3["name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                                                     </ul></td>
                                                 </tr>
                                               </table>
@@ -350,162 +352,60 @@ function toggle_subs(catid){
     
   </div>
 </div>
-<div class="AllWrap footer">
-  <div class="foota">
-    <div class="bordercc " id="widgets_76">
-      <div class="border-top">
-        <h3>关于我们</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-notice.html" >起泽介绍</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-memberrank.html" >资质证书</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-orderstatus.html" >合作伙伴</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-scoreplan.html" >行业新闻</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-returngood.html" >联系我们</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width:103px;">
-    <div class="bordercc " id="widgets_77">
-      <div class="border-top">
-        <h3>配送方式</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-shipping.html" >上海地区配送</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-orderinfo.html" >外埠、外地配送</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E4%B8%8A%E6%B5%B7%E5%9C%B0%E5%8C%BA%E9%85%8D%E9%80%81.html" >邮政快递EMS</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-shippinginfo.html" >关于送货和验货</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width:102px;">
-    <div class="bordercc " id="widgets_78">
-      <div class="border-top">
-        <h3>支付方式</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE.html" >货到付款</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E4%B8%AA%E4%BA%BA%E8%B4%A6%E6%88%B7.html" >个人账户</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E9%93%B6%E8%A1%8C%E7%94%B5%E6%B1%87.html" >银行电汇</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E5%85%AC%E5%8F%B8%E8%BD%AC%E8%B4%A6.html" >公司转账</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BB%98%E6%AC%BE.html" >支付宝付款</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-onlinepayment.html" >网上支付小贴士</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width:103px;">
-    <div class="bordercc " id="widgets_79">
-      <div class="border-top">
-        <h3>购物指南</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-nonmember.html" >顾客必读</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-terms.html" >购买流程</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-process.html" >购买保障</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-service.html" >体贴的售后服务</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-disclaimer.html" >网站免责声明</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E5%95%86%E5%93%81%E9%80%80%E6%8D%A2%E8%B4%A7%E4%BF%9D%E9%9A%9C.html" >商品退换货保障</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foota" style="width:103px;">
-    <div class="bordercc " id="widgets_80">
-      <div class="border-top">
-        <h3>售后服务</h3>
-      </div>
-      <div class="border-body">
-        <div class="TreeList">
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-license.html" >退换货政策</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-privacy.html" >隐私保护政策</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E5%AE%89%E5%85%A8%E6%80%A7%E8%AF%B4%E6%98%8E.html" >安全性说明</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E4%BA%89%E8%AE%AE%E5%A4%84%E7%90%86.html" >争议处理</a></div>
-          <div class="cat2"><a href="http://www.qizejx.cn/?page-%E9%83%91%E9%87%8D%E5%A3%B0%E6%98%8E.html" >郑重声明</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footar"></div>
-  <div class="clear"> </div>
+<div style="clear: both;"></div>
+<div style="margin-top:40px" class="di">
+<div class="di_1">
+<div class="di_2">
+<div class="di_3"><b>关于虎跃</b></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/about/">成都虎跃</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/kuaijietongdao/ryzz.html">荣誉资质</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/a/guanyuhuyue/zzsm.html">郑重声明</a></div></div>
+<div class="di_2">
+<div class="di_3"><b>交易方式</b></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/jiaoyifangshi/yxhk.html">银行汇款</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/jiaoyifangshi/bdjy.html">本地交易</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/jiaoyifangshi/psfs.html">配送方式</a></div></div>
+<div class="di_2">
+<div class="di_3"><b>售后服务</b> </div>
+<div class="di_3"><a href="http://www.cdhyqz.com/shouhoufuwu/thzn.html">退换指南</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/shouhoufuwu/thyz.html">退换原则</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/shouhoufuwu/thlc.html">退换流程</a></div></div>
+<div class="di_2">
+<div class="di_3"><b>快捷通道</b> </div>
+<div class="di_3"><a href="http://www.cdhyqz.com/kuaijietongdao/cjwt.html">常见问题</a></div>
+<div class="di_3"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=470652675&amp;site=qq&amp;menu=yes">在线留言
+
+</a></div>
+<div class="di_3"><a href="http://www.cdhyqz.com/contact/">联系我们</a></div></div>
+
+<div style="clear:both; margin-top:20px">
+
+<p>版权归成都虎跃机电设备有限公司所有 备案序号：蜀ICP备12021182号</p>
+<p>电话：028-83131290 18702890692  QQ：470652675 48525281 地址：四川省成都市洞子口路沙河源上金府 邮编:610030 </p>
+<p>吊装带、环链电动葫芦、永磁起重器、钢板起重钳、链条/吊带索具、手拉葫芦、弹簧平衡器、五一/武林手拉葫芦、五一/飞鸽手拉葫芦
+
+</p>
+
+<p><a href="http://webscan.360.cn"><img border="0" 
+
+src="http://webscan.360.cn/status/pai/hash/02521a828acb1a3c63d39ea530223046" alt="安全网站"></a>
+
+<a title="加速乐统计" href="http://www.jiasule.com/analytics/login/?site=http://cdhyqz.com/" target="_blank"><img border="0" 
+
+src="http://static.jiasule.com/static/images/stat/stat.png" alt="加速乐统计"></a>
+<a title="安全联盟" id="scanv_verify_link" href="http://www.anquan.org/seccenter/search/http://cdhyqz.com/"><img border="0" 
+
+src="http://static.anquan.org/static/images/scanv_sec_1_127x47.png" alt="安全联盟"></a>
+</p>
+<div style="flot: left; padding-top: 0px; height: 50px; clear: both;">
+                                <img src="/images/temp1.gif" alt="举报">
+                                <img src="/images/temp2.gif" alt="行业分类">
+                                <img src="/images/temp3.gif" alt="运营许可">
+                                <img src="/images/temp4.gif" alt="网站识别">
+                                <img src="/images/temp5.gif" alt="备案信息">
+                                </div>
 </div>
-<style id="thridpartystyle"> 
-.thridpartyicon { background:url(statics/icons/thridparty0.gif) no-repeat left center; height:30px; line-height:30px; text-indent:35px;} #accountlogin { width:180px; border:2px solid #badbf2; position:absolute; background:#fff; padding:5px;} #accountlogin h5 { border-bottom:1px solid #e2e2e2; margin:0px 5px 10px 5px;padding:0; height:22px; line-height:22px; color:#333333; font-weight:normal;} #accountlogin .logoimg { float:left; margin-left:5px;} #accountlogin .logoimg span img { margin:6px 3px 0 3px; } #accountlogin .more { text-align:right; float:right;} #accountlogin .more a { text-decoration:underline;} .trustlogos li{ display:inline; padding:2px;} .btn-trustlogin {background:url(statics/btn-trustlogin.gif); width:87px; height:30px; margin-bottom:35px;} .trustdialog .dialog-content { padding:0px; height:320px;} .RegisterWrap {} .RegisterWrap h4 { height:30px; line-height:30px;} .RegisterWrap .more { height:30px; line-height:30px; text-align:right; font-size:14px; color:#333333;} .RegisterWrap .more a { text-decoration:underline;} .RegisterWrap .form { } .RegisterWrap #formlogin,.RegisterWrap #formthridlogin { height:160px; border:1px solid #CCCCCC; margin:10px 0; padding:15px;} .RegisterWrap .customMessages { height:40px;} .dialog-title { margin:0 5px;} .dialog-title .title { padding:10px 0 2px 10px;} .dialog-title .dialog-close-btn {font-family:Arial Black;color:#fff;background:#FF9955;border:1px #FA6400 solid;font-size:14px;cursor:pointer; width:21px; margin-top:5px; text-align:center;} .dialog-title .dialog-close-btn:hover {background:#ff6655;border-color:#ff6655;} 
-</style>
-<script>
-$('thridpartystyle').inject(document.head);
-</script>
-<div class="themefoot">
-  <div class="themefootText textcenter"> <img src="http://www.qizejx.cn/images//20121014/ac5cd606dc3fc5b0.jpg"><br/>
-    <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tbody>
-        <tr>
-          <td><div align="center"> <img src="http://www.qizejx.cn/images//20121015/db19ed0b0069b188.gif"> <img src="http://www.qizejx.cn/images//20121015/f0c8a8c3a0c4c32f.jpg"> <img src="http://www.qizejx.cn/images//20121015/fe5df7463bac8bb2.png"><strong>&nbsp;&nbsp; </strong><font color="#990000" size="3"> </font></div></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div>
 </div>
-<div style="font-family:Verdana;line-height:20px!important;height:auto!important;font-size:11px!important;text-align:center;overflow:none!important;text-indent:0!important;"><a href="http://www.miibeian.gov.cn/" target="blank" style="color:#666;text-decoration:none;cursor:pointer;display:block;" class="textcenter">沪ICP备09062953号-9 </a><span style="display:none"><script src='http://pw.cnzz.com/c.php?id=81244258&l=2' language='JavaScript' charset='gb2312'></script></span></div>
-</div>
-<script>
-            withBroswerStore(function(store){
-               function randomChar(l)  {
-                    var  x="0123456789qwertyuioplkjhgfdsazxcvbnm";
-                    var  tmp="";
-                    for(var  i=0;i<  l;i++)  {
-                        tmp  +=  x.charAt(Math.ceil(Math.random()*100000000)%x.length);
-                    }
-                    return  tmp;
-               }
-               var lf = decodeURI(window.location.href);
-
-              var new_hs = "";
-              var pos = lf.indexOf("#r-") ;
-              var pos2 = lf.indexOf("%23r-") ;
-              if(pos!=-1||pos2!=-1){
-                if(pos2!=-1){
-                    pos=pos2+2;
-                }
-                new_hs=lf.substr(pos+1);
-            }
-               var old_hs = Cookie.get("S[SHOPEX_ADV_HS]");
-               if(new_hs && old_hs!=new_hs){
-                    Cookie.set("S[SHOPEX_ADV_HS]",new_hs);
-               }
-               store.get("jsapi",function(data){
-                       var script = document.createElement("script");
-                       var sessionid = Cookie.get("JS_SESSIONID")
-                        if(sessionid == null){
-                            sessionid=randomChar(32)
-                            Cookie.set("JS_SESSIONID",sessionid)
-                        }
-
-                       var _src = "http://rpc.app.shopex.cn/jsapi?certi_id=1375746835&_dep="+sessionid+"&pt=gallery:grid&app=shopex(4.8.5)&uid="+(encodeURIComponent(Cookie.get("S[MEMBER]") || "").split("-")[0])+"&ref="+encodeURIComponent(document.referrer)+"&sz="+JSON.encode(window.getSize())+"&hs="+encodeURIComponent(Cookie.get("S[SHOPEX_ADV_HS]") || new_hs)+"&rt=1373850280";
-
-                       if(data){
-                            try{
-                               data = JSON.decode(data);
-                            }catch(e){}
-                              if($type(data)=="object"){
-                                 _src +="&"+Hash.toQueryString(data);
-                              }else if($type(data)=="string"){
-                                 _src +="&"+data;
-                              }
-                          }
-
-                      script.setAttribute("src",_src);
-                      document.head.appendChild(script);
-
-               });
-
-            });
-            </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+[ 2013-07-24T09:16:10+08:00 ] 192.168.1.108 /product.php/Cookie?id=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cd_shop` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `cd_shop` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: check D:\www\Enterprise\Product\Lib\Action\CookieAction.class.php 第 20 行.
+NOTIC: [8] Undefined variable: set D:\www\Enterprise\Core\Lib\Core\Db.class.php 第 283 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\www\Enterprise\Core\Lib\Core\Db.class.php 第 283 行.
+SQL: UPDATE `cd_shop` SET  WHERE ( id=2 ) [ RunTime:0.001000s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=2 )' at line 1
+ [ SQL语句 ] : UPDATE `cd_shop` SET  WHERE ( id=2 )
+
+[ 2013-07-24T09:16:11+08:00 ] 192.168.1.108 /product.php/Cookie/showcookie
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_shop` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: cookie D:\www\Enterprise\Product\Lib\Action\CookieAction.class.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\Enterprise\Product\Lib\Action\CookieAction.class.php 第 27 行.
+
+[ 2013-07-24T09:16:13+08:00 ] ERR: (ThinkException) 参数错误或者未定义:id
+[ 2013-07-24T11:10:57+08:00 ] ERR: (ThinkException) 无法加载模块:id=1

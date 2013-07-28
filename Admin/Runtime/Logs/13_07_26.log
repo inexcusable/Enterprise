@@ -1,0 +1,275 @@
+[ 2013-07-26T15:57:03+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined index: id D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 148 行.
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cd_producttype` WHERE ( id=%d ) LIMIT 1  
+
+[ 2013-07-26T15:57:04+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.004000s ]
+
+[ 2013-07-26T15:57:08+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: id D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 148 行.
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cd_producttype` WHERE ( id=%d ) LIMIT 1  
+
+[ 2013-07-26T15:57:09+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T15:59:49+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: id D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 148 行.
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cd_producttype` WHERE ( id=%d ) LIMIT 1  
+
+[ 2013-07-26T15:59:50+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:00:07+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: info D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 149 行.
+
+[ 2013-07-26T16:00:08+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=3 )  [ RunTime:0.003001s ]
+
+[ 2013-07-26T16:00:09+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: info D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 149 行.
+
+[ 2013-07-26T16:00:10+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:00:12+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: info D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 149 行.
+
+[ 2013-07-26T16:00:13+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:00:14+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: info D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 149 行.
+
+[ 2013-07-26T16:00:15+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:01:08+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:01:09+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: info D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 149 行.
+
+[ 2013-07-26T16:01:10+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:01:11+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: info D:\www\Enterprise\Admin\Lib\Action\ProductAction.class.php 第 149 行.
+
+[ 2013-07-26T16:01:16+08:00 ] ERR: (ThinkException) 无法加载模块:getinfo
+[ 2013-07-26T16:04:16+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:04:17+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:04:18+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:04:19+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:37:44+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:37:45+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:37:49+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:37:50+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:37:52+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=7
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=7 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:37:54+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=6
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=6 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:38:11+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=4 )  [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:38:12+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:38:13+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=1 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:38:14+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.027002s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:38:17+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=7
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=7 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:38:19+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=6
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=6 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:39:05+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=2 )  [ RunTime:0.001000s ]
+
+[ 2013-07-26T16:39:06+08:00 ] 192.168.1.108 /cdadmin.php/Product/getinfo?id=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2013-07-26T16:39:11+08:00 ] 192.168.1.108 /cdadmin.php/Product/geterlei?sid=14
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cd_producttype` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cd_producttype` WHERE ( sid=14 )  [ RunTime:0.000000s ]
+
